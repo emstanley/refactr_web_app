@@ -8,14 +8,15 @@ export const SpeakerCard = ({
   headshot,
   linkedIn,
   twitter,
-  slug
+  slug,
+  pronouns
 }) => (
   <div className="col-xl-3 col-lg-3 col-md-4 col-sm-12">
     <div className="speakers xs-mb30">
       <div className="spk-img">
         {headshot.localFiles && (
           <Img
-            alt="Speaker"
+            alt={"Speaker - "+ speaker_name}
             fluid={headshot.localFiles[0].childImageSharp.fluid}
           />
         )}
@@ -35,10 +36,11 @@ export const SpeakerCard = ({
       </div>
       <div className="spk-info">
         <h3>
-          <a href={slug} rel="noreferrer noopener" target="_blank">
+          <a href={slug}>
             {speaker_name}
           </a>
         </h3>
+        <span>{pronouns}</span>
         <p>{role}</p>
         <h6>{company}</h6>
       </div>

@@ -45,7 +45,7 @@ export default ({ data }) => {
               {/* <a :name="speaker.fields.anchor" /> */}
               <div className="col-lg-5 col-md-12">
                 <div
-                  style={{ width: "250px", height: "100%" }}
+                  style={{ width: "400px", height: "100%" }}
                   className="speakers-img"
                 >
                   {data.airtable.data.headshot.localFiles && (
@@ -60,6 +60,11 @@ export default ({ data }) => {
               <div className="col-lg-7 col-md-12">
                 <div className="inner-content">
                   <h1>{data.airtable.data.speaker_name}</h1>
+                  <p>
+                    {data.airtable.data.role},{" "}
+                    {data.airtable.data.company}
+                  </p>
+                  <span>{data.airtable.data.pronouns}</span>
                   <br />
 
                   <p>{data.airtable.data.bio}</p>
@@ -127,6 +132,7 @@ export const query = graphql`
         session_url
         session_title
         session_anchor
+        pronouns
       }
     }
   }

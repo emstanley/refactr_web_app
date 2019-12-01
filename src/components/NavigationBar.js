@@ -14,9 +14,9 @@ export default class NavigationBar extends Component {
         <div className="container">
           <div className="row">
             <div className="col-lg-2">
-              <div className="brand-logo">
-                <a className="eventex-brand" to="index.html" />
-              </div>
+              {/*<div className="brand-logo">*/}
+              {/*  <a className="eventex-brand" to="index.html" />*/}
+              {/*</div>*/}
             </div>
             {/* /col end*/}
             <div className="col-lg-8">
@@ -53,17 +53,12 @@ export default class NavigationBar extends Component {
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link" activeClassName="active" to="/schedule">
-                        Schedule
+                      <Link className="nav-link" activeClassName="active" to="/workshops">
+                        Workshops
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link
-                        className="nav-link"
-                        activeClassName="active"
-                        to="/#call-for-sponsors"
-                        rel="noreferrer noopener"
-                      >
+                      <Link className="nav-link" activeClassName="active" to="/sponsors">
                         Sponsors
                       </Link>
                     </li>
@@ -85,7 +80,7 @@ export default class NavigationBar extends Component {
                     <li className="nav-item d-lg-none ">
                       <a
                         className="nav-link"
-                        href="https://tickets.connectevents.io/events/rtech2019/"
+                        href="http://reg.connectevents.io/ConnectEvents/rtech2020/"
                         rel="noreferrer noopener"
                         target="_blank"
                       >
@@ -102,8 +97,9 @@ export default class NavigationBar extends Component {
                 <li className="header-ticket">
                   <a
                     className="pr-0"
-                    href="https://tickets.connectevents.io/events/rtech2019/"
+                    href="http://reg.connectevents.io/ConnectEvents/rtech2020/"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Tickets
                   </a>

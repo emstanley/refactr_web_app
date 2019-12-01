@@ -58,7 +58,10 @@ export default ({ data }) => {
 
 export const speakerPageQuery = graphql`
   {
-    allAirtable(filter: { table: { eq: "Speakers" } }) {
+    allAirtable(
+      filter: { table: { eq: "Speakers" } }
+      sort: { fields: data___speaker_name }
+    ) {
       edges {
         node {
           fields {
@@ -72,7 +75,7 @@ export const speakerPageQuery = graphql`
             headshot {
               localFiles {
                 childImageSharp {
-                  fluid(maxWidth: 512) {
+                  fluid(maxWidth: 512, maxHeight: 512) {
                     ...GatsbyImageSharpFluid_tracedSVG
                   }
                 }
@@ -80,6 +83,7 @@ export const speakerPageQuery = graphql`
             }
             linkedIn
             company_url
+            pronouns
           }
         }
       }

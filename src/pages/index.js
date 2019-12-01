@@ -1,23 +1,18 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Footer from "../components/footer";
-import { WorkshopCardList } from "../components/WorkshopCardList";
 import { FeaturedSpeakerCard } from "../components/FeaturedSpeakerCard";
+import { KeynoteSpeakerList } from "../components/KeynoteSpeakerList";
 import NavigationBar from "../components/NavigationBar";
-import workshopData from "../workshop-data";
-import { Link } from "gatsby";
+import Countdown from "../components/Countdown";
 import { Helmet } from "react-helmet";
-import styled from "styled-components";
 
 import "../styles/assets/css/responsive2.css";
 import "../styles/assets/css/style.css";
 import "../styles/assets/css/style2.css";
 import "../styles/assets/css/responsive.css";
 
-const Topic = styled.a`${Link}:hover & {
-  color: white;
-}
-`
+
 
 export default ({ data }) => (
   <div>
@@ -34,7 +29,7 @@ export default ({ data }) => (
       <meta property="og:url" content="https://www.refactr.tech/" />
       <meta
         property="og:title"
-        content="REFACTR.TECH 2019 - Atlanta June 5 - 7"
+        content="REFACTR.TECH 2020 - Atlanta June 5 - 7"
       />
       <meta
         property="og:description"
@@ -85,12 +80,56 @@ export default ({ data }) => (
             <div className="row">
               <div className="col-lg-12">
                 <div className="banner-content">
-                  <div className="upcoming">
-                    <span className="is-countdown"> </span>
-                    <div data-countdown="2019/06/05" />
+
+                  <div className="row justify-content-center">
+                    <div className="col-lg-7 align-self-start">
+                        <img
+                        className="img-fluid"
+                        src="/img/logo/refactr-logo.svg"
+                        alt="REFACTR.TECH Conference"
+                      />
+                    </div>
                   </div>
-                </div>
-              </div>
+
+                  <div className="row justify-content-center" style={{marginTop: '30px'}}>
+                    <div className="col-lg-7">
+                        <img
+                        className="img-fluid"
+                        src="/img/logo/refactr2020-header-slogan.svg"
+                        alt="Diversity.Inclusion.Tech"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="row justify-content-center">
+                      <span style={{color: '#C418A3', 'font-size':'2em', 'font-weight': '500', marginTop: '20px'}}>APRIL 22nd - 24th</span>
+                  </div>
+
+                  {/*<div className="upcoming">
+                    <span className="is-countdown"> </span>
+                    <div data-countdown="2019/06/05" /> 
+                  </div>*/}
+
+                  <div className="row justify-content-center">
+                        <Countdown date={`2020-04-22T12:00:00`} />
+                        
+                  </div>
+                  
+
+                  {/* <div className="row justify-content-end" style={{marginTop: '-30px', marginBottom: '0'}}>
+                    <div className="col-sm-5 col-5">
+                        <img
+                        src="/img/logo/refactr2020-header-location.svg"
+                        alt="Diversity.Inclusion.Tech"
+                      />
+                    </div>
+                </div> */}
+
+              
+
+                  </div>
+                  </div>
+
               {/* /col end*/}
             </div>
             {/* /row end*/}
@@ -124,7 +163,7 @@ export default ({ data }) => (
               <div className="col-xl-3 col-lg-3 col-md-4 col-sm-3">
                 <div className="single-counter xs-mb40">
                   <div className="count-content">
-                    <span className="count">70</span>
+                    <span className="count">60</span>
                     <p>Speakers</p>
                   </div>
                 </div>
@@ -146,134 +185,6 @@ export default ({ data }) => (
         </div>
         {/*Counter Up Area End Here*/}
 
-        {/* Topics Section */}
-        <section className="topics-section-two">
-          {/* <span className="float-text">Session Topics</span> */}
-          <div className="anim-icons">
-            <span className="icon icon-circle-3" />
-            <span className="icon icon-circle-5" />
-          </div>
-          <div className="auto-container">
-            <div className="sec-title">
-              <h2>Tracks</h2>
-              <p>
-                <span style={{ color: "#C41579", fontWeight: "bold" }}>
-                  New!
-                </span>
-                &nbsp;&nbsp;Check out our sessions by track.
-              </p>
-            </div>
-
-            {/*Event Topics*/}
-            <div className="event-topics-tabs">
-              <div className="tabs-box">
-                {/*Tab Btns*/}
-                <ul className="tab-btns tab-buttons clearfix">
-                  <li data-tab="#tab1" className="tab-btn">
-                  <div>
-                    
-                      <Link
-                        id="test"
-                        to="/sessions/#Front-End"
-                        rel="noreferrer noopener"
-                        className="test"
-                      >
-                        Front-End Engineering
-                      </Link>
-                        
-                    </div>
-                  </li>
-                  <li data-tab="#tab1" className="tab-btn">
-                    <div>
-                      <Link
-                        to="/sessions/#SoftwareEngineering"
-                        rel="noreferrer noopener"
-                      >
-                        Software Engineering
-                      </Link>
-                    </div>
-                  </li>
-
-                  <li data-tab="#tab1" className="tab-btn">
-                    <div>
-                      <Link
-                        className="topic"
-                        to="/sessions/#Product/UX/UI"
-                        rel="noreferrer noopener"
-                      >
-                        Product &amp; UX
-                      </Link>
-                    </div>
-                  </li>
-
-                  <li data-tab="#tab1" className="tab-btn">
-                    <div>
-                      <Link
-                       
-                        to="/sessions/#CoolShit"
-                        rel="noreferrer noopener"
-                      >
-                        Cool $h!t
-                      </Link>
-                    </div>
-                  </li>
-
-                  <li data-tab="#tab1" className="tab-btn">
-                    <div>
-                      <Link
-                    
-                        to="/sessions/#Career&Leadership"
-                        rel="noreferrer noopener"
-                      >
-                        Career &amp; Leadership
-                      </Link>
-                    </div>
-                  </li>
-
-                  <li data-tab="#tab1" className="tab-btn">
-                    <div>
-                      <Link
-                       
-                        to="/sessions/#SocialImpact"
-                        rel="noreferrer noopener"
-                      >
-                        Social Impact
-                      </Link>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            {/*End Product Info Tabs*/}
-          </div>
-        </section>
-
-        <div className="our-blog-area  pad100">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="section-title text-center">
-                  <div className="title-text mb50">
-                    <h2>Workshops</h2>
-                  </div>
-                </div>
-              </div>
-              {/* /col end*/}
-            </div>
-            {/* /.row  end*/}
-            <div className="inner-blog">
-              <div>
-                <div className="row">
-                  <WorkshopCardList items={workshopData} />
-                </div>
-              </div>
-              {/* /row end*/}
-            </div>
-            {/* /container end*/}
-          </div>
-          {/*Feature Area End Here*/}
-        </div>
-
         {/*Keynote Speaker Area Start Here*/}
         <div className="whos-speaking-area-two speakers bg-team parallax pad100">
           <div className="container">
@@ -289,85 +200,9 @@ export default ({ data }) => (
             </div>
             {/* /.row  end*/}
             <div className="row">
-              <div className="col-md-4 col-sm-12">
-                <div className="speakers xs-mb30">
-                  <div className="spk-img">
-                    <img
-                      className="img-fluid"
-                      src="img/speakers/tracy-lee.jpeg"
-                      alt="trainer-img"
-                    />
-                    {/*ul>
-                                            <li><a href="https://twitter.com/ladyleet"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="https://www.linkedin.com/in/tracyslee/"><i class="fa fa-linkedin"></i></a></li>
-                                        </ul*/}
-                  </div>
-                  <div className="spk-info">
-                    <a
-                      href="https://twitter.com/ladyleet"
-                      rel="noreferrer noopener"
-                      target="_blank"
-                    >
-                      <h3 style={{ color: "white" }}>Tracy Lee</h3>
-                    </a>
-                    <h6 style={{ color: "#aaa" }}>Co-founder, This Dot Labs</h6>
-                  </div>
-                </div>
-              </div>
-              {/* /col end*/}
-              <div className="col-md-4 col-sm-12">
-                <div className="speakers xs-mb30">
-                  <div className="spk-img">
-                    <img
-                      className="img-fluid"
-                      src="img/speakers/kortney-ziegler.jpg"
-                      alt="trainer-img"
-                    />
-                    {/*ul>
-                                            <li><a href="https://twitter.com/ladyleet"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="https://www.linkedin.com/in/tracyslee/"><i class="fa fa-linkedin"></i></a></li>
-                                        </ul*/}
-                  </div>
-                  <div className="spk-info">
-                    <a
-                      href="https://twitter.com/fakerapper"
-                      rel="noreferrer noopener"
-                      target="_blank"
-                    >
-                      <h3 style={{ color: "white" }}>Dr. Kortney Ziegler</h3>
-                    </a>
-                    <h6 style={{ color: "#aaa" }}>
-                      Director of Research and Design, ZaMLabs
-                    </h6>
-                  </div>
-                </div>
-              </div>
-              {/* /col end*/}
-              <div className="col-md-4 col-sm-12">
-                <div className="speakers xs-mb30">
-                  <div className="spk-img">
-                    <img
-                      className="img-fluid"
-                      src="img/speakers/alex-castillo-headshot-square.jpg"
-                      alt="trainer-img"
-                    />
-                    {/*ul>
-                                                <li><a href="https://twitter.com/ladyleet"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="https://www.linkedin.com/in/tracyslee/"><i class="fa fa-linkedin"></i></a></li>
-                                            </ul*/}
-                  </div>
-                  <div className="spk-info">
-                    <a
-                      href="https://twitter.com/castillo__io"
-                      rel="noreferrer noopener"
-                      target="_blank"
-                    >
-                      <h3 style={{ color: "white" }}>Alex Castillo</h3>
-                    </a>
-                    <h6 style={{ color: "#aaa" }}>Co-Founder, Neurosity</h6>
-                  </div>
-                </div>
-              </div>
+              
+            <KeynoteSpeakerList items={data.keynoteSpeakers.edges} />
+
             </div>
             {/* /row end*/}
           </div>
@@ -392,8 +227,8 @@ export default ({ data }) => (
               <div className="row mb50">
                 {/*Whos Speaking Area End Here*/}
 
-                <FeaturedSpeakerCard items={data.allAirtable.edges} />
-                
+                <FeaturedSpeakerCard items={data.featuredSpeakers.edges} />
+
                 <div className="col-lg-12">
                   <a style={{textAlign: 'center', color: '#f20487', fontWeight: 'normal'}} href="/speakers">
                     <h3>See All Confirmed Speakers</h3>
@@ -413,7 +248,7 @@ export default ({ data }) => (
                   <div className="col-lg-12">
                     <div className="section-title text-center">
                       <div className="title-text mb50">
-                        <h2>2-Day Conference Pricing</h2>
+                        <h2>Conference Pricing</h2>
                       </div>
                     </div>
                   </div>
@@ -425,44 +260,23 @@ export default ({ data }) => (
                     <div className="pricing-box bg-pricing xs-mb30">
                       <div className="pricing-header">
                         <div className="pricing-value">
-                          <span>$</span> 175
+                          <span>$</span>199
                         </div>
                       </div>
-                      <div className="pricing-title">Early Bird (Ended)</div>
+                      <div className="pricing-title">Early Bird</div>
                       <div className="pricing-content">
                         <ul>
+                          <li><span style={{ color: '#4225DD', fontWeight: 'bold' }}>Limited! Get yours while tickets   last!</span></li>
                           <li>Main Stage Keynotes</li>
                           <li>Sessions in 6 Tracks</li>
                           <li>Expo Hall</li>
                           <li>Networking Opportunities</li>
                           <li>Tons of Social Activities</li>
+                          <li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $125</a></li>
                         </ul>
                       </div>
                       <div className="bordered-btn">
-                        <a>Sold Out</a>
-                      </div>
-                    </div>
-                  </div>
-                  {/* /col end*/}
-                  <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                    <div className="pricing-box bg-pricing xs-mb30">
-                      <div className="pricing-header">
-                        <div className="pricing-value">
-                          <span>$</span> 250
-                        </div>
-                      </div>
-                      <div className="pricing-title">Regular - Ends May 26</div>
-                      <div className="pricing-content">
-                        <ul>
-                          <li>Main Stage Keynotes</li>
-                          <li>Sessions in 6 Tracks</li>
-                          <li>Expo Hall</li>
-                          <li>Networking Opportunities</li>
-                          <li>Tons of Social Activities</li>
-                        </ul>
-                      </div>
-                      <div className="bordered-btn">
-                        <a href="https://tickets.connectevents.io/events/rtech2019/">
+                        <a href="http://reg.connectevents.io/ConnectEvents/rtech2020/">
                           Buy Ticket
                         </a>
                       </div>
@@ -473,125 +287,50 @@ export default ({ data }) => (
                     <div className="pricing-box bg-pricing xs-mb30">
                       <div className="pricing-header">
                         <div className="pricing-value">
-                          <span>$</span> 300
+                          <span>$</span>275
+                        </div>
+                      </div>
+                      <div className="pricing-title">Regular</div>
+                      <div className="pricing-content">
+                        <ul>
+                          <li>&nbsp;</li>
+                          <li>Main Stage Keynotes</li>
+                          <li>Sessions in 6 Tracks</li>
+                          <li>Expo Hall</li>
+                          <li>Networking Opportunities</li>
+                          <li>Tons of Social Activities</li>
+                          <li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $125</a></li>
+                        </ul>
+                      </div>
+                      <div className="bordered-btn">
+                        <a href="http://reg.connectevents.io/ConnectEvents/rtech2020/">
+                          Buy Ticket
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  {/* /col end*/}
+                  <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <div className="pricing-box bg-pricing xs-mb30">
+                      <div className="pricing-header">
+                        <div className="pricing-value">
+                          <span>$</span>350
                         </div>
                       </div>
                       <div className="pricing-title">Late</div>
                       <div className="pricing-content">
                         <ul>
+                          <li>&nbsp;</li>
                           <li>Main Stage Keynotes</li>
                           <li>Sessions in 6 Tracks</li>
                           <li>Expo Hall</li>
                           <li>Networking Opportunities</li>
                           <li>Tons of Social Activities</li>
+                          <li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $125</a></li>
                         </ul>
                       </div>
                       <div className="bordered-btn">
-                        <a href="https://tickets.connectevents.io/events/rtech2019/">
-                          Buy Ticket
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  {/* /col end*/}
-                </div>
-                {/* /row end*/}
-                <div className="row mt60">
-                  <div className="col-lg-12">
-                    <div className="section-title text-center">
-                      <div className="title-text mb50">
-                        <h2>3-Day Conference + Workshop Pricing</h2>
-                      </div>
-                    </div>
-                  </div>
-                  {/* /col end*/}
-                </div>
-                {/* /row end*/}
-                <div className="row">
-                  <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                    <div className="pricing-box bg-pricing xs-mb30">
-                      <div className="pricing-header">
-                        <div className="pricing-value">
-                          <span>$</span> 275
-                        </div>
-                      </div>
-                      <div className="pricing-title">
-                        Early Bird + Workshop (Ended)
-                      </div>
-                      <div className="pricing-content">
-                        <ul>
-                          <li>
-                            Choice of 1 Full-Day{" "}
-                            <a href="workshops.html">Workshop</a>
-                          </li>
-                          <li>Main Stage Keynotes</li>
-                          <li>Sessions in 6 Tracks</li>
-                          <li>Expo Hall</li>
-                          <li>Networking Opportunities</li>
-                          <li>Tons of Social Activities</li>
-                        </ul>
-                      </div>
-                      <div className="bordered-btn">
-                        <a>Sold Out</a>
-                      </div>
-                    </div>
-                  </div>
-                  {/* /col end*/}
-                  <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                    <div className="pricing-box bg-pricing xs-mb30">
-                      <div className="pricing-header">
-                        <div className="pricing-value">
-                          <span>$</span> 375
-                        </div>
-                      </div>
-                      <div className="pricing-title">
-                        Regular + Workshop - Ends May 26
-                      </div>
-                      <div className="pricing-content">
-                        <ul>
-                          <li>
-                            Choice of 1 Full-Day{" "}
-                            <a href="workshops.html">Workshop</a>
-                          </li>
-                          <li>Main Stage Keynotes</li>
-                          <li>Sessions in 6 Tracks</li>
-                          <li>Expo Hall</li>
-                          <li>Networking Opportunities</li>
-                          <li>Tons of Social Activities</li>
-                        </ul>
-                      </div>
-                      <div className="bordered-btn">
-                        <a href="https://tickets.connectevents.io/events/rtech2019/">
-                          Buy Ticket
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  {/* /col end*/}
-                  <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                    <div className="pricing-box bg-pricing xs-mb30">
-                      <div className="pricing-header">
-                        <div className="pricing-value">
-                          <span>$</span> 425
-                        </div>
-                      </div>
-                      <div className="pricing-title">Late + Workshop</div>
-                      <div className="pricing-content">
-                        <ul>
-                          <li>
-                            Choice of 1 Full-Day{" "}
-                            <a href="workshops.html">Workshop</a>
-                          </li>
-                          <li>Main Stage Keynotes</li>
-                          <li>Sessions in 6 Tracks</li>
-                          <li>Expo Hall</li>
-                          <li>Networking Opportunities</li>
-                          <li>Tons of Social Activities</li>
-                        </ul>
-                      </div>
-                      <br />
-                      <div className="bordered-btn">
-                        <a href="https://tickets.connectevents.io/events/rtech2019/">
+                        <a href="http://reg.connectevents.io/ConnectEvents/rtech2020/">
                           Buy Ticket
                         </a>
                       </div>
@@ -608,467 +347,8 @@ export default ({ data }) => (
           </div>
           {/*Pricing Tables Area End Here*/}
         </div>
-        {/*Our Sponsors Area Start Here*/}
-        <a name="call-for-sponsors" />
-        <div className="our-sponsers-area pad100 bg-color">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="section-title text-center">
-                  <div className="title-text mb50 xs-mb40">
-                    <h2>Sponsors</h2>
-                  </div>
-                </div>
-                <hr />
-                <h2 className="text-center">Platinum</h2>
-                <div className="single-sponsers">
-                  <ul>
-                    <li className="col-lg-3 mr-0">
-                      <a
-                        href="https://www.salesloft.com/"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/salesloft.png"
-                          alt="Sponsor: SalesLoft"
-                        />
-                      </a>
-                    </li>
-                  </ul>
-                  <hr />
 
-                  <h2 className="text-center">Gold</h2>
-                  <ul>
-                    <li className="col-lg-3">
-                      <a
-                        href="https://www.homedepot.com/"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/the-home-depot.png"
-                          alt="Sponsor: The Home Depot"
-                        />
-                      </a>
-                    </li>
-                    <li className="col-lg-3 mr-0">
-                      <a
-                        href="https://amp.dev/"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img src="/img/sponsors/amp.png" alt="Sponsor: AMP" />
-                      </a>
-                    </li>
-                  </ul>
 
-                  <ul>
-                    <li className="col-lg-3">
-                      <a
-                        href="https://callrail.com/"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/callrail.png"
-                          alt="Sponsor: CallRail"
-                        />
-                      </a>
-                    </li>
-
-                    <li class="col-lg-3">
-                      <a
-                        href="https://www.honeywell.com"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/honeywell.png"
-                          alt="Sponsor: Honeywell"
-                        />
-                      </a>
-                    </li>
-
-                    <li class="col-lg-3 mr-0">
-                      <a
-                        href="https://rangle.io/?utm_source=refactr&utm_medium=website&utm_campaign=event"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/rangle.png"
-                          alt="Sponsor: Rangle"
-                        />
-                      </a>
-                    </li>
-                  </ul>
-
-                  <hr />
-
-                  <h2 className="text-center">VIP Reception</h2>
-
-                  <ul>
-                    <li className="col-lg-3 mr-0">
-                      <a
-                        href="https://www.netflix.com/"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/netflix.png"
-                          alt="Sponsor: Netflix"
-                        />
-                      </a>
-                    </li>
-                  </ul>
-
-                  <hr />
-
-                  <h2 className="text-center">Silver</h2>
-
-                  <ul>
-                    <li className="col-lg-3  mr-0">
-                      <a
-                        href="https://google.com"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/google.png"
-                          alt="Sponsor: Google"
-                        />
-                      </a>
-                    </li>
-
-                    <li className="col-lg-3">
-                      <a
-                        href="https://www.mailchimp.com/"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/mailchimp.png"
-                          alt="Sponsor: Mailchimp"
-                        />
-                      </a>
-                    </li>
-
-                    <li class="col-lg-3 mr-0">
-                      <a
-                        href="https://www.twilio.com/"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/twilio.png"
-                          alt="Sponsor: Twilio"
-                        />
-                      </a>
-                    </li>
-                  </ul>
-
-                  <ul>
-                    <li className="col-lg-3">
-                      <a
-                        href="https://tech.aarons.com/"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/aarons-tech.png"
-                          alt="Sponsor: Aaron's Tech"
-                        />
-                      </a>
-                    </li>
-
-                    <li className="col-lg-3">
-                      <a
-                        href="https://www.ultimatesoftware.com/"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/ultimate-software.png"
-                          alt="Sponsor: Ultimate Software"
-                        />
-                      </a>
-                    </li>
-                    <li className="col-lg-3 mr-0">
-                      <a
-                        href="https://www.abstract.com/"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/abstract.png"
-                          alt="Sponsor: Abstract"
-                        />
-                      </a>
-                    </li>
-                  </ul>
-
-                  <hr />
-
-                  <h2 className="text-center">Video & Accessibility</h2>
-
-                  <ul>
-                    <li className="col-lg-3">
-                      <a
-                        href="https://www.samsara.com/"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/samsara.png"
-                          alt="Sponsor: Samsara"
-                        />
-                      </a>
-                    </li>
-                    <li className="col-lg-3 mr-0">
-                      <a
-                        href="https://www.mozilla.com/"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/mozilla.png"
-                          alt="Sponsor: Mozilla"
-                        />
-                      </a>
-                    </li>
-                  </ul>
-
-                  <hr />
-
-                  <h2 className="text-center">Lanyard & Name Badge</h2>
-
-                  <ul>
-                    <li className="col-lg-3 mr-0">
-                      <a
-                        href="https://auth0.com/"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/auth0.png"
-                          alt="Sponsor: Auth0"
-                        />
-                      </a>
-                    </li>
-                    <li className="col-lg-3 mr-0">
-                      <a
-                        href="https://www.homedepot.com/"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/the-home-depot.png"
-                          alt="Sponsor: The Home Depot"
-                        />
-                      </a>
-                    </li>
-                  </ul>
-
-                  <hr />
-
-                  <h2 className="text-center">Happy Hour</h2>
-                  <ul>
-                    <li className="col-lg-3">
-                      <a
-                        href="https://www.cloudinary.com/"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/new_cloudinary_logo_square.png"
-                          alt="Sponsor: Cloudinary"
-                        />
-                      </a>
-                    </li>
-                    <li className="col-lg-3">
-                      <a
-                        href="https://www.warnermediagroup.com/"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/warner_media.png"
-                          alt="Sponsor: Warner Media"
-                        />
-                      </a>
-                    </li>
-                    <li class="col-lg-3 mr-0">
-                      <a
-                        href="https://www.twilio.com/"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/twilio.png"
-                          alt="Sponsor: Twilio"
-                        />
-                      </a>
-                    </li>
-                  </ul>
-                  <hr />
-
-                  <h2 className="text-center">Opportunity Grants</h2>
-                  <ul>
-                    <li className="col-lg-3">
-                      <a
-                        href="https://www.homedepot.com/"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/the-home-depot.png"
-                          alt="Sponsor: The Home Depot"
-                        />
-                      </a>
-                    </li>
-
-                    <li className="col-lg-3 mr-0">
-                      <a
-                        href="https://www.deluxe.com/"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/deluxe.png"
-                          alt="Sponsor: Deluxe Corporation"
-                        />
-                      </a>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li className="col-lg-3">
-                      <a
-                        href="https://bignerdranch.com/"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/bignerdranch.png"
-                          alt="Sponsor: Big Nerd Ranch"
-                        />
-                      </a>
-                    </li>
-                    <li className="col-lg-3">
-                      <a
-                        href="https://balsamiq.com/"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/balsamiq.png"
-                          alt="Sponsor: Balsamiq"
-                        />
-                      </a>
-                    </li>
-                    <li className="col-lg-3 mr-0">
-                      <a
-                        href="https://www.axios.com/"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/axios.png"
-                          alt="Sponsor: Axios"
-                        />
-                      </a>
-                    </li>
-                  </ul>
-
-                  <hr />
-
-                  <h2 className="text-center">
-                    Speaker Lounge & Hacker Lounge
-                  </h2>
-                  <ul>
-                    <li className="col-lg-3 mr-0">
-                      <a
-                        href="https://www.terminus.com/"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/terminus.png"
-                          alt="Sponsor: Terminus"
-                        />
-                      </a>
-                    </li>
-                    <li className="col-lg-3 mr-0">
-                      <a
-                        href="https://developer.microsoft.com/en-us/advocates/index.html"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/microsoft.png"
-                          alt="Sponsor: Microsoft"
-                        />
-                      </a>
-                    </li>
-                  </ul>
-
-                  <hr />
-
-                  <h2 className="text-center">After Party</h2>
-                  <ul>
-                    <li class="col-lg-3 mr-0">
-                      <a
-                        href="https://www.cypress.io"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/cypress.png"
-                          alt="Sponsor: Cypress.io"
-                        />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              {/* /col end*/}
-            </div>
-            {/* /row end*/}
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="section-title text-center">
-                  <div className="title-text mb50 xs-mb40">
-                    <h2>Sponsor REFACTR.TECH</h2>
-                    <p>
-                      Companies, are you looking for an opportunity to engage
-                      with hundreds of people from diverse backgrounds at our
-                      Exhibit Hall and Career Expo? Please take a few minutes to
-                      review the various ways to support REFACTR.TECH in our
-                      attached sponsorship prospectus
-                    </p>
-                  </div>
-                </div>
-              </div>
-              {/* /col end*/}
-            </div>
-
-            <div className="col-lg-12">
-              <div className="primary-btn text-center">
-                <a
-                  href="https://refactrtech.typeform.com/to/ouMvCw"
-                  className="btn-primary"
-                  rel="noreferrer noopener"
-                  target="_blank"
-                >
-                  Become a Sponsor
-                </a>
-              </div>
-            </div>
-            {/* /col end*/}
-          </div>
-          {/* /row end*/}
-        </div>
-        {/*Our Sponsors Area End Here*/}
         {/*Main Container End Here*/}
       </div>
       <Footer />
@@ -1078,8 +358,9 @@ export default ({ data }) => (
 
 export const speakerPageQuery = graphql`
   {
-    allAirtable(
-      filter: { table: { eq: "Speakers" }, data: { featured: { eq: true } } }
+    keynoteSpeakers: allAirtable(
+      filter: { table: { eq: "Speakers" }, data: { session_track: { eq: "Keynote" } } }
+      sort: { fields: data___speaker_name }
     ) {
       edges {
         node {
@@ -1094,7 +375,7 @@ export const speakerPageQuery = graphql`
             headshot {
               localFiles {
                 childImageSharp {
-                  fluid(maxWidth: 512) {
+                  fluid(maxWidth: 512, maxHeight: 512) {
                     ...GatsbyImageSharpFluid_tracedSVG
                   }
                 }
@@ -1102,6 +383,37 @@ export const speakerPageQuery = graphql`
             }
             linkedIn
             company_url
+            pronouns
+          }
+        }
+      }
+    }
+    featuredSpeakers: allAirtable(
+      filter: { table: { eq: "Speakers" }, data: { featured: { eq: true } } }
+      sort: { fields: data___speaker_name }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          data {
+            speaker_name
+            role
+            company
+            twitter
+            headshot {
+              localFiles {
+                childImageSharp {
+                  fluid(maxWidth: 512, maxHeight: 512) {
+                    ...GatsbyImageSharpFluid_tracedSVG
+                  }
+                }
+              }
+            }
+            linkedIn
+            company_url
+            pronouns
           }
         }
       }

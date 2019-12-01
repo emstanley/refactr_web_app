@@ -42,21 +42,19 @@ export default class NavigationBar extends Component {
                         <span className="sr-only">(current)</span>
                       </Link>
                     </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" activeClassName="active" to="/about">
-                        About
-                      </Link>
-                    </li>
+                   
                     <li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/speakers">
                         Speakers
                       </Link>
                     </li>
+
                     <li className="nav-item">
-                      <Link className="nav-link" activeClassName="active" to="/schedule">
-                        Schedule
+                      <Link className="nav-link" activeClassName="active" to="/sessions">
+                        Sessions
                       </Link>
                     </li>
+                    
                     <li className="nav-item">
                       <Link
                         className="nav-link"
@@ -82,34 +80,13 @@ export default class NavigationBar extends Component {
                         Shop
                       </a>
                     </li>
-                    <li className="nav-item d-lg-none ">
-                      <a
-                        className="nav-link"
-                        href="https://tickets.connectevents.io/events/rtech2019/"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        Tickets
-                      </a>
-                    </li>
+                    
                   </ul>
                 </div>
               </nav>
             </div>
             {/* /col end*/}
-            <div className="col-lg-2 d-none d-lg-block">
-              <ul>
-                <li className="header-ticket">
-                  <a
-                    className="pr-0"
-                    href="https://tickets.connectevents.io/events/rtech2019/"
-                    target="_blank"
-                  >
-                    Tickets
-                  </a>
-                </li>
-              </ul>
-            </div>
+            
             {/* /col end*/}
           </div>
           {/* /row end*/}

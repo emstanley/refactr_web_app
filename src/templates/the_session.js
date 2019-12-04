@@ -59,7 +59,7 @@ export default ({ data }) => {
                   <div>
                     <a name="frontend-sessions" />
                     <p className="session-title">
-                      <span className="m0">{data.airtable.data.title}</span>
+                      <span>{data.airtable.data.title}</span>
                     </p>
 
                     {/*<p>
@@ -76,6 +76,10 @@ export default ({ data }) => {
                     <span className="speaker-header">Speakers</span>
 
                     <SessionSpeakerList speakers={data.airtable.data.Speakers}/>
+
+                    <div style={{textAlign: 'center'}}>
+                      <span className="primary-btn"><a className="btn-primary" href="http://reg.connectevents.io/ConnectEvents/rtech2020/" rel="noreferrer noopener" target="_blank">Buy Tickets</a></span>
+                    </div>
 
                   </div>
                 </div>

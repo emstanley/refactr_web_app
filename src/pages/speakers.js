@@ -10,7 +10,7 @@ export default ({ data }) => {
     <div>
       <Helmet>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Speakers | REFACTR.TECH</title>
+        <title>2019 Speakers | REFACTR.TECH</title>
         <meta name="author" content="iThemesLab" />
         <meta name="description" content="" />
         <meta
@@ -26,7 +26,7 @@ export default ({ data }) => {
               <div className="col-lg-12">
                 <div className="about-content">
                   <div className="section-title text-center">
-                    <h2>Speakers</h2>
+                    <h2>2019 Speakers</h2>
                   </div>
                   <ol className="breadcrumb">
                     <li>

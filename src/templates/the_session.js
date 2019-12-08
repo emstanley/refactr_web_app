@@ -29,7 +29,7 @@ export default ({ data }) => {
               <div className="col-lg-12">
                 <div className="about-content">
                   <div className="section-title text-center">
-                    <h2>Events</h2>
+                    <h2>2019 Events</h2>
                   </div>
                   <ol className="breadcrumb">
                     <li>

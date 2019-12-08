@@ -8,7 +8,7 @@ export default ({ data }) => (
   <div>
     <Helmet>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <title>Workshops | REFACTR.TECH</title>
+    <title>2019 Workshops | REFACTR.TECH</title>
     <meta name="author" content="iThemesLab"/>
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
@@ -25,7 +25,7 @@ export default ({ data }) => (
             <div className="col-lg-12">
               <div className="about-content">
                 <div className="section-title text-center">
-                  <h2>Events</h2>
+                  <h2>2019 Events</h2>
                 </div>
                 <ol className="breadcrumb">
                   <li>

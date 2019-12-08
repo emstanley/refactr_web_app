@@ -80,12 +80,30 @@ export default class NavigationBar extends Component {
                         Shop
                       </a>
                     </li>
+                    <li className="nav-item d-lg-none ">
+                      <a
+                        className="nav-link"
+                        href="https://refactr.tech">
+                        Back to 2020
+                      </a>
+                    </li>
                     
                   </ul>
                 </div>
               </nav>
             </div>
             {/* /col end*/}
+            <div className="col-lg-2 d-none d-lg-block">
+              <ul>
+                <li className="header-ticket">
+                  <a
+                    className="pr-0"
+                    href="https://refactr.tech">
+                    Back to 2020
+                  </a>
+                </li>
+              </ul>
+            </div>
             
             {/* /col end*/}
           </div>

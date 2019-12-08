@@ -265,7 +265,7 @@ export default ({ data }) => (
 
             {/*Pricing Tables Area Start Here*/}
             <a name="pricing"/>
-            <div className="pricing-tables-area pad-b100">
+            <div className="pricing-tables-area pad-b50">
               <div className="container">
                 <div className="row">
                   <div className="col-lg-12">
@@ -371,6 +371,54 @@ export default ({ data }) => (
           {/*Pricing Tables Area End Here*/}
         </div>
 
+        <div className="our-sponsors-area ptb50 bg-color">
+          <div className="container">
+            <div className="row">
+                <div className="col-lg-12">
+                    <div className="section-title text-center">
+                        <div className="title-text mb30 xs-mb40">
+                            <h2>Ways to Attend</h2>
+                        <p style={{marginTop: "15px"}}>At REFACTR.TECH you'll have the opportunity to highlight your company while meeting amazing people. The conference provides content valuable to a wide range of experience levels and interests. Technical topics of interest from intermediate to senior developers, alongside beginner-friendly sessions and workshops, are all part of the event. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-lg-12">
+                    <div className="primary-btn text-center">
+                        <a href="/convince-your-boss" class="btn-primary">Convince Your Boss</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        
+        <div className="counter-up-area ptb60 bg-counter parallax">
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-12">
+                <div className="single-counter xs-mb40">
+                  <div className="count-content" style={{ textAlign: "center"}}>
+                    <span className="count" style={{ fontSize: "3.1em"}}>Recap REFACTR 2019</span>
+                    <p style={{ fontSize: "1.5em", fontWeight: "400"}}>Couldn't make it to REFACTR.TECH 2019? Or just want to relive the vibe from this year's conference?</p>
+                      <div className="row">
+                        <div className="col-md-6 col-sm-12">
+                          <div className="primary-btn text-center mt30">
+                              <a href="https://2019.refactr.tech" class="btn-primary" style={{border: "2px solid #fff"}}>2019 Conference</a>
+                          </div>
+                        </div>
+                        <div className="col-md-6 col-sm-12">
+                          <div className="primary-btn text-center mt30">
+                              <a href="https://www.youtube.com/channel/UCfBdXCYPCHEXX8ISwOQM08A" class="btn-primary" style={{border: "2px solid #fff"}}>2019 Videos</a>
+                          </div>
+                        </div>   
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         {/*Main Container End Here*/}
       </div>

@@ -1,6 +1,6 @@
 # refactr.tech gatsby project
 
-REFACTR.TECH is a 3 day conference showcasing voices of marginalized people & allies on tech topics, diversity, inclusion and intersectionality. The current [website](http://refactr.tech/) is interactive, but it's arduous to maintain. As the conference grows its list of talks and workshops, the contents of the website have to be updated manually. 
+REFACTR.TECH is a 3 day conference showcasing voices of marginalized people & allies on tech topics, diversity, inclusion and intersectionality. The previous website was interactive, but was arduous to maintain. As the conference grew its list of talks and workshops, the contents of the website had to be updated manually. 
 
 The goals are to:
 

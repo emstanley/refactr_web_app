@@ -47,7 +47,7 @@ export default () => (
                 <div>
                   <p className="c1">
                     <span className="c0">
-                      REFACTR.TECH 2019 Terms &amp; Conditions
+                      REFACTR.TECH 2020 Terms &amp; Conditions
                     </span>
                   </p>
                   <p className="c1">
@@ -63,7 +63,7 @@ export default () => (
                   </p>
                   <p className="c1">
                     <span className="c0">
-                      The REFACTR.TECH 2019 conference (the "Conference") are
+                      The REFACTR.TECH 2020 conference (the "Conference") are
                       hosted by ConnectJS LLC ("ConnectEvents"). By registering
                       for the Conference, you agree to be bound by these terms
                       and conditions.
@@ -93,7 +93,7 @@ export default () => (
                   <p className="c1">
                     <span className="c2">
                       Registration substitutions and changes of the registration
-                      can be made up until 11:59pm EST on 22 May, 2019, which is
+                      can be made up until 11:59pm EST on 14 April, 2020, which is
                       ten (10) business days prior to the start of the
                       Conference. Registration for individuals registered to
                       attend the Conference and/or any associated ancillary
@@ -102,7 +102,7 @@ export default () => (
                     </span>
                     <span className="c9">hello@refactr.tech</span>
                     <span className="c0">
-                      &nbsp;no later than 11:59pm EST on 22 May 2019
+                      &nbsp;no later than 11:59pm EST on 14 April 2020
                     </span>
                   </p>
                   <p className="c1">
@@ -122,9 +122,9 @@ export default () => (
                     <span className="c0">
                       Registration Cancellations: Cancellations must be made in
                       writing and sent to the Registrar by e-mail no later than
-                      11:59pm EST on 10 May 2019 to receive a refund of the fee.
+                      11:59pm EST on 10 April 2020 to receive a refund of the fee.
                       There will be no refunds for cancellations received after
-                      11:59pm EST on 22 May 2019.
+                      11:59pm EST on 10 April 2020.
                     </span>
                   </p>
                   <p className="c1">

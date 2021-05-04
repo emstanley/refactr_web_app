@@ -22,7 +22,7 @@ toast.configure();
 export default ({ data }) => (
   <div>
     <Helmet>
-      <title>REFACTR.TECH 2021 - Atlanta September 15 - 17</title>
+      <title>REFACTR.TECH 2021 - Atlanta August 18 - 20</title>
       <meta
         name="description"
         content="The Southeast's premier multi-track tech conference with a focus on inclusion."
@@ -36,7 +36,7 @@ export default ({ data }) => (
       <meta property="og:url" content="https://www.refactr.tech/" />
       <meta
         property="og:title"
-        content="REFACTR.TECH 2021 - Atlanta September 15 - 17"
+        content="REFACTR.TECH 2021 - Atlanta August 18 - 20"
       />
       <meta
         property="og:description"
@@ -64,7 +64,7 @@ export default ({ data }) => (
       <meta name="twitter:site" content="@RefactrTech" />
       <meta
         name="twitter:title"
-        content="REFACTR.TECH 2021 - Atlanta September 15 - 17"
+        content="REFACTR.TECH 2021 - Atlanta August 18 - 20"
       />
       <meta
         name="twitter:description"
@@ -76,9 +76,9 @@ export default ({ data }) => (
         content="https://refactr.tech/img/conference/marketing_header.png"
       />
       <meta name="twitter:label1" content="Date" />
-      <meta name="twitter:data1" content="September 15 - 17" />
+      <meta name="twitter:data1" content="August 18 - 20" />
       <meta name="twitter:label2" content="Location" />
-      <meta name="twitter:data2" content="Downtown Atlanta, GA" />
+      <meta name="twitter:data2" content="Online" />
 
       {/* <!-- Schema.org markup for Google+ --> */}
       <meta itemprop="name" content="REFACTR.TECH 2021" />
@@ -99,13 +99,13 @@ export default ({ data }) => (
         <NavigationBar />
         {/*Header End Here*/}
 
-        <div className="counter-up-area ptb20 bg-about parallax" style={{marginTop: "90px"}}>
+        {/*<div className="counter-up-area ptb20 bg-about parallax" style={{marginTop: "90px"}}>
         <div className="container">
           <div className="row">
             <div className="col-sm-12">
               <div className="single-counter xs-mb40">
                 <div className="count-content" style={{ textAlign: "center"}}>
-                  <span className="count" style={{ fontSize: "3.1em", marginTop: "0", marginBottom: "0"}}>Important Articles</span>
+                  {/*<span className="count" style={{ fontSize: "3.1em", marginTop: "0", marginBottom: "0"}}>Important Articles</span>
                     <div className="row">
                       <div className="col-md-6 col-sm-12">
                         <div className="accent-btn text-center mt10" style={{marginBottom: "10px"}}>
@@ -117,32 +117,32 @@ export default ({ data }) => (
                             <a href="/stopasianhate" class="btn-accent" style={{border: "2px solid #fff"}}>Stop Asian Hate</a>
                         </div>
                       </div>   
-                    </div>
+                    </div>*
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div>*/}
 
         {/*Hero Banner Area Start Here*/}
-        <div className="hero-banner-area home-2 hero-bg-2 parallax" style={{marginTop: "0"}}>
+        <div className="hero-banner-area home-2 hero-bg-5 parallax" style={{marginTop: "90px"}}>
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
                 <div className="banner-content">
 
                   <div className="row justify-content-center">
-                    <div className="col-lg-7 align-self-start">
+                    <div className="col-md-10 col-lg-9 align-self-start">
                         <img
                         className="img-fluid"
-                        src="/img/logo/refactr-logo.svg"
+                        src="/img/logo/refactr2021-logo.svg"
                         alt="REFACTR.TECH Conference"
                       />
                     </div>
                   </div>
 
-                  <div className="row justify-content-center" style={{marginTop: '30px'}}>
+                  {/*<div className="row justify-content-center" style={{marginTop: '30px'}}>
                     <div className="col-lg-6">
                         <img
                         className="img-fluid"
@@ -172,7 +172,7 @@ export default ({ data }) => (
                     alt="Conference location: Atlanta"
                   />
                     </div>
-                  </div>
+              </div>*/}
 
                   {/*<div className="upcoming">
                     <span className="is-countdown"> </span>
@@ -213,41 +213,42 @@ export default ({ data }) => (
 
 
         {/*Counter Up Area Start Here*/}
-        <div className="counter-up-area pad100 bg-counter parallax">
+        <div className="counter-up-area pad100 bg-tricolor parallax">
           <div className="container">
-            <div className="row">
-              <div className="col-xl-3 col-lg-3 col-md-4 col-sm-3">
+            <div className="row ml150">
+              
+              <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6">
                 <div className="single-counter xs-mb40">
                   <div className="count-content">
-                    <span className="count">3</span>
-                    <p>Days</p>
+                  <img
+                  className="img-fluid"
+                  src="/img/logo/workshops-August-14.svg"
+                  alt="REFACTR.TECH Workshops - August 14th"
+                />
                   </div>
                 </div>
               </div>
               {/* /col end*/}
-              <div className="col-xl-3 col-lg-3 col-md-4 col-sm-3">
+              <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                 <div className="single-counter xs-mb40">
                   <div className="count-content">
-                    <span className="count">6</span>
-                    <p>Tracks</p>
+                  <img
+                  className="img-fluid"
+                  src="/img/logo/conference-August-18-20.svg"
+                  alt="REFACTR.TECH Workshops - August 14th"
+                />
                   </div>
                 </div>
               </div>
               {/* /col end*/}
-              <div className="col-xl-3 col-lg-3 col-md-4 col-sm-3">
-                <div className="single-counter xs-mb40">
+              <div className="col-xl-3 col-lg-3 d-md-none d-lg-block col-sm-6">
+                <div className="single-counter ">
                   <div className="count-content">
-                    <span className="count">60</span>
-                    <p>Speakers</p>
-                  </div>
-                </div>
-              </div>
-              {/* /col end*/}
-              <div className="col-xl-3 col-lg-3 d-md-none d-lg-block col-sm-3">
-                <div className="single-counter">
-                  <div className="count-content">
-                    <span className="count">500</span>
-                    <p>Attendees</p>
+                  <img
+                  className="img-fluid"
+                  src="/img/logo/career-fair-August 17.svg"
+                  alt="REFACTR.TECH Workshops - August 14th"
+                />
                   </div>
                 </div>
               </div>
@@ -291,7 +292,7 @@ export default ({ data }) => (
               <div className="col-lg-12">
                 <div className="section-title text-center">
                   <div className="title-text mb50">
-                    <h2>Featured Past Speakers</h2>
+                    <h2>Featured Speakers</h2>
                   </div>
                 </div>
               </div>
@@ -322,7 +323,7 @@ export default ({ data }) => (
             {/*Whos Speaking Area End Here*/}
 
             {/*Pricing Tables Area Start Here*/}
-            {/*<a name="pricing"/>
+            <a name="pricing"/>
             <div className="pricing-tables-area pad-b50">
               <div className="container">
                 <div className="row">
@@ -341,24 +342,24 @@ export default ({ data }) => (
                     <div className="pricing-box bg-pricing xs-mb30">
                       <div className="pricing-header">
                         <div className="pricing-value">
-                          <span>$</span>199
+                          FREE
                         </div>
                       </div>
-                      <div className="pricing-title">Early Bird</div>
+                      <div className="pricing-title">Career Fair</div>
                       <div className="pricing-content">
                         <ul>
-                          <li><span style={{ color: '#4225DD', fontWeight: 'bold' }}>Limited! Get yours while tickets   last!</span></li>
-                          <li>Main Stage Keynotes</li>
-                          <li>Sessions in 6 Tracks</li>
-                          <li>Expo Hall</li>
-                          <li>Networking Opportunities</li>
-                          <li>Tons of Social Activities</li>
-                          <li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $125</a></li>
+                          {/*<li><span style={{ color: '#4225DD', fontWeight: 'bold' }}>Limited! Get yours while tickets   last!</span></li>*/}
+                          <li>Meet companies hiring now!</li>
+                          <li>Talk directly with hiring team</li>
+                          <li>Exclusive interactive sessions</li>
+                          <li>Review our job board</li>
+                          <li>Share your resume</li>
+                          {/*<li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $125</a></li>*/}
                         </ul>
                       </div>
                       <div className="bordered-btn">
                         <a href="/#pricing">
-                          Sold Out!
+                          Coming Soon!
                         </a>
                       </div>
                     </div>
@@ -368,24 +369,24 @@ export default ({ data }) => (
                     <div className="pricing-box bg-pricing xs-mb30">
                       <div className="pricing-header">
                         <div className="pricing-value">
-                          <span>$</span>275
+                          <span>$</span>30
                         </div>
                       </div>
-                      <div className="pricing-title">Regular</div>
+                      <div className="pricing-title">Conference</div>
                       <div className="pricing-content">
                         <ul>
-                        <li><span style={{ color: '#4225DD', fontWeight: 'bold' }}>Regular sales end July 24th!</span></li>
+                          {/*<li><span style={{ color: '#4225DD', fontWeight: 'bold' }}>Limited! Get yours while tickets   last!</span></li>*/}
                           <li>Main Stage Keynotes</li>
-                          <li>Sessions in 6 Tracks</li>
-                          <li>Expo Hall</li>
+                          <li>Sessions in 3 Tracks</li>
+                          <li>World Renowned Speakers</li>
                           <li>Networking Opportunities</li>
-                          <li>Tons of Social Activities</li>
-                          <li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $125</a></li>
-                        </ul>
+                          <li>Social Activities</li>
+                          {/*<li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $125</a></li>*/}
+                          </ul>
                       </div>
                       <div className="bordered-btn">
                         <a href="http://reg.connectevents.io/ConnectEvents/rtech2020/">
-                          Buy Ticket
+                          Coming Soon!
                         </a>
                       </div>
                     </div>
@@ -395,24 +396,23 @@ export default ({ data }) => (
                     <div className="pricing-box bg-pricing xs-mb30">
                       <div className="pricing-header">
                         <div className="pricing-value">
-                          <span>$</span>350
+                          <span>$</span>20
                         </div>
                       </div>
-                      <div className="pricing-title">Late</div>
+                      <div className="pricing-title">Workshops</div>
                       <div className="pricing-content">
                         <ul>
-                          <li>&nbsp;</li>
-                          <li>Main Stage Keynotes</li>
-                          <li>Sessions in 6 Tracks</li>
-                          <li>Expo Hall</li>
-                          <li>Networking Opportunities</li>
-                          <li>Tons of Social Activities</li>
-                          <li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $125</a></li>
-                        </ul>
+                          <li>Instructors from Top Companies</li>
+                          <li>Learn from the Experts</li>
+                          <li>4-hour Deep Dive</li>
+                          <li>Convenient Scheduling</li>
+                          <li>Verified Certificate</li>
+                          {/*<li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $125</a></li>*/}
+                          </ul>
                       </div>
                       <div className="bordered-btn">
                         <a href="http://reg.connectevents.io/ConnectEvents/rtech2020/">
-                          Buy Ticket
+                          Coming Soon!
                         </a>
                       </div>
                     </div>
@@ -422,7 +422,7 @@ export default ({ data }) => (
                 
               </div>
               
-            </div>*/}
+            </div>
             {/*Pricing Tables Area End Here*/}
             
           </div>

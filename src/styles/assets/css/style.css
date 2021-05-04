@@ -494,6 +494,18 @@ a {
 .mt100 {
   margin: 100px 0 0; }
 
+.ml150 {
+  margin-left: 150px;}
+
+.ml100 {
+  margin-left: 100px;}
+
+  .ml50 {
+    margin-left: 50px;}
+
+    .ml20 {
+      margin-left: 20px;}
+
 .padtb {
   padding: 60px 0 100px; }
 
@@ -523,6 +535,9 @@ a {
 
 .pad-top100 {
   padding-top: 100px; }
+
+  .pad-bot30 {
+    padding-bottom: 30px; }
 
 .xs-mt50 {
   margin-top: 50px; }
@@ -578,6 +593,11 @@ a {
 .hero-bg-4 {
   background-image: url(../img/slide/4.jpg); }
 
+.hero-bg-5 {
+  background-image: url(../img/bg/refactr2021-header-bg.png?123);
+  background-color: #000;
+}
+
 /* .bg-3 {
   background-image: url(../img/bg/1.png); } */
 
@@ -592,7 +612,8 @@ a {
   background-position: top right; }
 
 .bg-footer {
-  background-image: url(../img/bg/footer.jpg); }
+  /*background-image: url(../img/bg/footer.jpg); }*/
+  background: black;}
 
 /* .bg-8 {
   background-image: url(../img/bg/4.jpg); } */
@@ -608,11 +629,16 @@ a {
 .bg-counter {
   background-image: url(../img/bg/5.jpg); }
 
+.bg-tricolor {
+  background-image: url(../img/bg/tri-color-bg.png?123); }
+
 .bg-contact {
   background-image: url(../img/bg/6.jpg); }
 
 .bg-about {
-  background-image: url(../img/bg/9.jpg); }
+  /* background-image: url(../img/bg/9.jpg);  */
+  background:black;
+}
 
 .bg-blm {
     background-image: url(../img/bg/Black-Lives-Matter.jpg); 
@@ -620,7 +646,7 @@ a {
     background-size: cover; }
 
 .bg-sah {
-      background-image: url(../img/bg/Stop-Asian-Hate-cropped.jpg); 
+      background-image: url(../img/bg/Stop-Asian-Hate.jpg); 
       background-position: right bottom;
       background-size: cover; }
 

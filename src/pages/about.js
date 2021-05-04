@@ -160,55 +160,10 @@ export default ({ data }) => {
         {/* /container end*/}
       </div>
       {/*Conference Synopsis Area End Here*/}
-      {/*Counter Up Area Start Here*/}
-      <div className="counter-up-area pad100 bg-counter parallax">
-        <div className="container">
-          <div className="row">
-            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-3">
-              <div className="single-counter xs-mb40">
-                <div className="count-content">
-                  <span className="count">3</span>
-                  <p>Days</p>
-                </div>
-              </div>
-            </div>
-            {/* /col end*/}
-            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-3">
-              <div className="single-counter xs-mb40">
-                <div className="count-content">
-                  <span className="count">6</span>
-                  <p>Tracks</p>
-                </div>
-              </div>
-            </div>
-            {/* /col end*/}
-            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-3">
-              <div className="single-counter xs-mb40">
-                <div className="count-content">
-                  <span className="count">70</span>
-                  <p>Speakers</p>
-                </div>
-              </div>
-            </div>
-            {/* /col end*/}
-            <div className="col-xl-3 col-lg-3 d-md-none d-lg-block col-sm-3">
-              <div className="single-counter">
-                <div className="count-content">
-                  <span className="count">500</span>
-                  <p>Attendees</p>
-                </div>
-              </div>
-            </div>
-            {/* /col end*/}
-          </div>
-          {/* /row end*/}
-        </div>
-        {/* /container end*/}
-      </div>
-      {/*Counter Up Area End Here*/}
+    
 
       {/*Whos Organizing Area End Here*/}
-      <div className="whos-speaking-area pad50 mt100">
+      <div className="whos-speaking-area pad50 mt50">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -251,8 +206,8 @@ export default ({ data }) => {
                   >
                     <h3>Angel Banks</h3>
                   </a>
-                  <p>Technical Expert</p>
-                  <h6 style={{fontWeight: '700'}}>Thinkful</h6>
+                  <p>Program Manager</p>
+                  <h6 style={{fontWeight: '700'}}>Microsoft</h6>
                 </div>
               </div>
             </div>
@@ -286,7 +241,7 @@ export default ({ data }) => {
                   >
                     <h3>Beth Laing</h3>
                   </a>
-                  <p>Engineering Manager</p>
+                  <p>Director of Engineering</p>
                   <h6 style={{fontWeight: '700'}}>CallRail</h6>
                 </div>
               </div>
@@ -321,8 +276,8 @@ export default ({ data }) => {
                   >
                     <h3>Erica Stanley</h3>
                   </a>
-                  <p>Sr. Engineering Manager</p>
-                  <h6 style={{fontWeight: '700'}}>Mozilla</h6>
+                  <p>Director of Engineering</p>
+                  <h6 style={{fontWeight: '700'}}>Google</h6>
                 </div>
               </div>
             </div>

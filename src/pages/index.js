@@ -22,7 +22,7 @@ toast.configure();
 export default ({ data }) => (
   <div>
     <Helmet>
-      <title>REFACTR.TECH 2021 - Atlanta August 18 - 20</title>
+      <title>REFACTR.TECH 2021 - Online August 18 - 20</title>
       <meta
         name="description"
         content="The Southeast's premier multi-track tech conference with a focus on inclusion."
@@ -36,7 +36,7 @@ export default ({ data }) => (
       <meta property="og:url" content="https://www.refactr.tech/" />
       <meta
         property="og:title"
-        content="REFACTR.TECH 2021 - Atlanta August 18 - 20"
+        content="REFACTR.TECH 2021 - Online August 18 - 20"
       />
       <meta
         property="og:description"
@@ -44,7 +44,7 @@ export default ({ data }) => (
       />
       <meta 
         name="keywords" 
-        content="Atlanta, technology, conference, diversity, inclusion, accessibility, software, frontend, fullstack, web development, leadership, career, javascript, react, angular, serverless, machine learning, product, ux, ui, design, social impact" 
+        content="Atlanta, online, virtual, technology, conference, diversity, inclusion, accessibility, software, frontend, fullstack, web development, leadership, career, javascript, react, angular, serverless, machine learning, product, ux, ui, design, social impact" 
       />
 
       <meta
@@ -64,7 +64,7 @@ export default ({ data }) => (
       <meta name="twitter:site" content="@RefactrTech" />
       <meta
         name="twitter:title"
-        content="REFACTR.TECH 2021 - Atlanta August 18 - 20"
+        content="REFACTR.TECH 2021 - Online August 18 - 20"
       />
       <meta
         name="twitter:description"
@@ -158,7 +158,7 @@ export default ({ data }) => (
                     className="img-fluid"
                     style={{marginTop: '35px'}}
                     src="/img/logo/refactr2021-date.svg"
-                    alt="Conference dates:  September 15 - 17, 2021"
+                    alt="Conference dates:  August 18 - 20, 2021"
                   />
                     </div>
                   </div>
@@ -277,7 +277,7 @@ export default ({ data }) => (
         {/*Counter Up Area End Here*/}
 
         {/*Keynote Speaker Area Start Here*/}
-        {/*<div className="whos-speaking-area-two speakers bg-team parallax pad100">
+        <div className="whos-speaking-area-two speakers bg-team parallax pad100">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
@@ -298,7 +298,7 @@ export default ({ data }) => (
            
           </div>
           
-              </div>*/}
+              </div>
         {/*Keynote Speakers Area End Here*/}
 
         {/*Whos Speaking Area Start Here*/}

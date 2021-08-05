@@ -8,7 +8,7 @@ exports.onCreateNode = ({ node, actions }) => {
 
   if (node.internal.type === `Airtable` && node.table === `Speakers`) {
     const slug =
-      "/speakers/" + node.data.anchor
+      "/speakers/" + node.data.speaker_anchor
     createNodeField({
       node,
       name: `slug`,
@@ -25,9 +25,36 @@ exports.onCreateNode = ({ node, actions }) => {
       value: slug
     });
   }
+
+  if (node.internal.type === `Airtable` && node.table === `Company_Profile`) {
+    const slug =
+      "/company/" + node.data.company_anchor
+    createNodeField({
+      node,
+      name: `slug`,
+      value: slug
+    });
+  }
+
+  if (node.internal.type === `Airtable` && node.table === `Job_Board`) {
+    const slug =
+      "/jobs/" + node.data.anchor
+    createNodeField({
+      node,
+      name: `slug`,
+      value: slug
+    });
+  }
+
 };
 
 exports.createPages = ({ actions, graphql }) => {
+
+
+  function companyHasProfile(item){
+    return item.data.Company_Profile
+  }
+
   const { createPage } = actions;
   // Go get the data that satisfy
   return graphql(
@@ -51,7 +78,17 @@ exports.createPages = ({ actions, graphql }) => {
             }
           }
         }
-        sponsors: allAirtable(filter: { table: { eq: "Sponsors" } }) {
+        
+        jobs: allAirtable(filter: { table: { eq: "Job_Board" } }) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+            }
+          }
+        }
+        companies: allAirtable(filter: { table: { eq: "Company_Profile" } }) {
           edges {
             node {
               fields {
@@ -86,5 +123,25 @@ exports.createPages = ({ actions, graphql }) => {
         }
       });
     });
+    result.data.companies.edges.forEach(({ node }) => {
+      createPage({
+        path: node.fields.slug,
+        component: path.resolve(`./src/templates/the_exhibitor.js`),
+        context: {
+          slug: node.fields.slug
+        }
+      });
+    });
+
+    result.data.jobs.edges.forEach(({ node }) => {
+      createPage({
+        path: node.fields.slug,
+        component: path.resolve(`./src/templates/the_job.js`),
+        context: {
+          slug: node.fields.slug
+        }
+      });
+    });
+
   });
 };

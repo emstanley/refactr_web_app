@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { ExhibitorCard } from "../components/ExhibitorCard";
+import { ExhibitorCardList } from "../components/ExhibitorCardList";
 import NavigationBar from "../components/NavigationBar";
 import Footer from "../components/footer";
 import { Helmet } from "react-helmet";
@@ -33,6 +33,14 @@ export default ({ data }) => (
                   <li><a href="/">Home</a></li>
                   <li>|</li>
                   <li>Career Fair</li>
+                  <li>|</li>
+                  <li>
+                      <a href="/jobs">All Jobs</a>
+                  </li>
+                    <li>|</li>
+                    <li>
+                      <a href="/uploadresume">Upload Resume</a>
+                    </li>
                 </ol>
               </div>
             </div>
@@ -55,7 +63,7 @@ export default ({ data }) => (
           <div className="inner-blog">
             <div>
               <div className="row">
-                {data.allAirtable.nodes.map((item, index) => <ExhibitorCard key={index} {...item.data} /> )}
+               <ExhibitorCardList items={data.allAirtable.nodes} />
               </div>
             </div>
           </div>
@@ -68,7 +76,9 @@ export default ({ data }) => (
 
 export const query = graphql`
   {
-    allAirtable(filter: {table: {eq: "Sponsors"}, data: {exhibitor: {eq: true}}}) {
+    allAirtable(filter: {table: {eq: "Sponsors"}, data: {exhibitor: {eq: true}}}
+    sort: { fields: data___profile_status}
+    ) {
       nodes {
         fields {
           slug
@@ -78,6 +88,16 @@ export const query = graphql`
           exhibitor
           logo {
             url
+          }
+          Company_Profile{
+            data{
+              company_anchor
+              description
+              description_truncated
+              why_work_here
+              has_dei_info
+              DEI_URL
+            }
           }
         }
       }

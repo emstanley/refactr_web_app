@@ -11,6 +11,7 @@ import "../../src/styles/assets/css/style.css?23";
 import "../../src/styles/assets/css/responsive.css";
 
 export default ({ data }) => (
+
   <div>
   <Helmet>
   <title>Sessions | REFACTR.TECH 2021</title>
@@ -280,7 +281,6 @@ export const all_sessions = graphql`
             url
             Track
             title
-            anchor
             speaker_url
             date_friendly
             Day
@@ -295,7 +295,6 @@ export const all_sessions = graphql`
             Speakers {
               data {
                 speaker_name
-                anchor
                 headshot {
                   localFiles {
                     childImageSharp {
@@ -307,6 +306,7 @@ export const all_sessions = graphql`
                 }
                 role
                 company
+                speaker_anchor
               }
             }
           }

@@ -49,16 +49,6 @@ export default class NavigationBar extends Component {
                         About
                       </Link>
                     </li>
-                    <li className="nav-item">
-                      <a
-                        className="nav-link"
-                        href="https://airtable.com/shr1yqXStSRLmUCDq"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        Call for Speakers
-                      </a>
-                    </li>
 
                     <li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/sponsors">
@@ -89,6 +79,12 @@ export default class NavigationBar extends Component {
                         Jobs
                       </Link>
                     </li>*/}
+
+                    <li className="nav-item">
+                      <Link className="nav-link" activeClassName="active" to="/covid-policy">
+                        COVID-19 Policy
+                      </Link>
+                    </li>
 
                     <li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/updates">

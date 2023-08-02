@@ -21,7 +21,7 @@ export default () =>
                     <div className="f-icon">
                         <i className="fa fa-map-marker"></i>
                     </div>
-                    <span>40 Courtland St NE<br/> Atlanta, GA 30303</span>
+                    <span>3423 Piedmont Rd NE<br/> Atlanta, GA 30305</span>
                 </div>
                 <p>Don't miss the buzz about our speakers, sessions and events! Sign up below to get the latest news about REFACTR.TECH right in your inbox. </p>
                 {/* mailchimp embed form component starts here */}
@@ -43,7 +43,7 @@ export default () =>
     <div className="row">
         <div className="col-lg-12">
             <div className="copyright">
-                <p>©2018-2022 ConnectEvents.io&nbsp;&nbsp;&nbsp;&nbsp;
+                <p>©2018-2023 ConnectEvents.io&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="/about">About</a>&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="/privacy-policy">Privacy Policy</a>&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="/terms-and-conditions">Terms and Conditions</a>&nbsp;&nbsp;&nbsp;&nbsp;

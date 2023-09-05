@@ -97,9 +97,9 @@ export default ({ data }) => (
             <div className="col-lg-12">
               <div className="about-content">
                 <div className="section-title text-center">
-                  <h2>2022 Events</h2>
+                  <h2>2023 Events</h2>
                 </div>
-                <ol className="breadcrumb">
+                {/*<ol className="breadcrumb">
                   <li>
                     <a href="/">Home</a>
                   </li>
@@ -113,7 +113,7 @@ export default ({ data }) => (
                   <li><a href="/special-events">Special Events</a></li>
                   <li>|</li>
 			            <li><a href="/book-signing">Book Signings</a></li>
-                </ol>
+                </ol>*/}
               </div>
             </div>
             {/* /col*/}
@@ -133,7 +133,7 @@ export default ({ data }) => (
         <span className="icon icon-circle-5" />
       </div>
       <div className="auto-container">
-        <div className="sec-title">
+        {/*<div className="sec-title">
           <h2>Tracks</h2>
           <p>
             <span style={{ color: "#C41579", fontWeight: "bold" }}>
@@ -141,12 +141,11 @@ export default ({ data }) => (
             </span>
             &nbsp;&nbsp;Check out this year's sessions by track.
           </p>
-        </div>
+              </div>*/}
 
         {/*Event Topics*/}
-        <div className="event-topics-tabs">
+        {/* <div className="event-topics-tabs">
           <div className="tabs-box">
-            {/*Tab Btns*/}
             <ul className="tab-btns tab-buttons clearfix">
 
             <Link
@@ -258,7 +257,7 @@ export default ({ data }) => (
 
             </ul>
           </div>
-        </div>
+            </div> */}
         {/*End Product Info Tabs*/}
       </div>
     </section>
@@ -272,13 +271,13 @@ export default ({ data }) => (
                 <div className="single-counter xs-mb40">
                   <div className="count-content" style={{ textAlign: "center"}}>
                     <span className="count" style={{ fontSize: "3.1em"}}>Register</span>
-                    <p style={{ fontSize: "1.3em", fontWeight: "400", textTransform:"none"}}>Get your ticket to attend REFACTR.TECH in Atlanta, October 27 for 3 days packed full of workshops, keynotes, tech sessions and demos, and of course, parties! 
-                    With <Link style={{ color: "white", textDecoration: "underline"}} to="/sessions">tracks from software engineering to leadership to data and community,</Link> there’s something for everybody!</p>
+                    <p style={{ fontSize: "1.3em", fontWeight: "400", textTransform:"none"}}>Get your ticket to attend REFACTR.TECH in Atlanta, October 27 for a day full of keynotes, tech sessions and demos, and of course, parties! 
+                    With  <Link style={{ color: "white", textDecoration: "underline"}} to="/sessions">topics ranging from software engineering to leadership to data and community,</Link> there’s something for everybody!</p>
                       <div className="row justify-content-center">
                         <div className="col-md-4 col-sm-12">
                           <div className="primary-btn text-center mt30">
                               {/* <a href="https://2019.refactr.tech" class="btn-primary" style={{border: "2px solid #fff"}}>2019 Conference</a> */}
-                              <OutboundLink href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank" class="btn-primary" style={{border: "2px solid #fff", fontSize: "1.5em"}}>Get Tickets Now</OutboundLink> 
+                              <OutboundLink href="https://reg.connectevents.io/ConnectEvents/rtech2023/" target="_blank" class="btn-primary" style={{border: "2px solid #fff", fontSize: "1.5em"}}>Get Tickets Now</OutboundLink> 
                           </div>
                         </div>
                           

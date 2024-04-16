@@ -139,10 +139,10 @@ export default ({ data }) => {
                     </li>
                     <li>|</li>
                     <li>Companies</li>
-                    <li>|</li>
+                    {/*<li>|</li>
                     <li>
                       <a href="/uploadresume">Upload Resume</a>
-                    </li>
+                    </li>*/}
                   </ol>
                 </div>
               </div>
@@ -163,7 +163,7 @@ export default ({ data }) => {
                 <div className="col-lg-12">
                     <div className="section-title text-center">
                         <div className="title-text mb50 xs-mb40">
-                            <h2>2023 Sponsors</h2>
+                            <h2>Past Sponsors</h2>
                         </div>
                         <hr />
                         <div className="single-sponsers">
@@ -178,7 +178,7 @@ export default ({ data }) => {
                 <div className="col-lg-12">
                     <div className="section-title text-center">
                         <div className="title-text mb30 xs-mb40">
-                            <h2>Sponsor REFACTR.TECH 2023</h2>
+                            <h2>Sponsor REFACTR.TECH 2024 Events</h2>
                         <p style={{marginTop: "15px"}}>Companies, are you looking for an opportunity to engage with hundreds of technologists from diverse backgrounds? Check out our sponsorship prospectus to review the many ways to partner with REFACTR.TECH.</p>
                         </div>
                     </div>
@@ -197,19 +197,18 @@ export default ({ data }) => {
         {/*List of Sponsors End Here*/}
         
 
-        <div className="counter-up-area ptb60 bg-counter parallax">
+       {/*<div className="counter-up-area ptb60 bg-counter parallax">
           <div className="container">
             <div className="row">
               <div className="col-sm-12">
                 <div className="single-counter xs-mb40">
                   <div className="count-content" style={{ textAlign: "center"}}>
                     <span className="count" style={{ fontSize: "3.1em"}}>Register</span>
-                    <p style={{ fontSize: "1.3em", fontWeight: "400", textTransform:"none"}}>Get your ticket to attend REFACTR.TECH in Atlanta, October 27 for 3 days packed full of workshops, keynotes, tech sessions and demos, and of course, parties! 
+                    <p style={{ fontSize: "1.3em", fontWeight: "400", textTransform:"none"}}>Get your ticket to attend REFACTR.TECH in Atlanta,  for 3 days packed full of workshops, keynotes, tech sessions and demos, and of course, parties! 
                     With <Link style={{ color: "white", textDecoration: "underline"}} to="/sessions">tracks from software engineering to leadership to data and community,</Link> there’s something for everybody!</p>
                       <div className="row justify-content-center">
                         <div className="col-md-4 col-sm-12">
                           <div className="primary-btn text-center mt30">
-                              {/* <a href="https://2019.refactr.tech" class="btn-primary" style={{border: "2px solid #fff"}}>2019 Conference</a> */}
                               <OutboundLink href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank" class="btn-primary" style={{border: "2px solid #fff", fontSize: "1.5em"}}>Get Tickets Now</OutboundLink> 
                           </div>
                         </div>
@@ -220,7 +219,7 @@ export default ({ data }) => {
               </div>
             </div>
           </div>
-        </div>
+                  </div>*/}
 
         {/*Footer Area Start Here*/}
         <Footer />

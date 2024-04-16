@@ -31,7 +31,7 @@ export const SessionCardList = ({ items, showBuyTickets, soldOut }) => {
                   </p>
                   <br/>
                   <p>
-                    <a className="detail-view">
+                    <a className="detail-view" style={{fontWeight: 'bold'}}>
                       {" "}
                       {session.data.date_friendly} {session.data.end_date_friendly}
                     </a>
@@ -39,12 +39,12 @@ export const SessionCardList = ({ items, showBuyTickets, soldOut }) => {
 
                   <p>{session.data.Abstract}</p>
 
-                  <span className="speaker-header">Speakers</span>
+                  { session.data.Speakers? <span className="speaker-header">Speakers</span>  : ""}
 
-                  <SessionSpeakerList speakers={session.data.Speakers}/>
+                  { session.data.Speakers? <SessionSpeakerList speakers={session.data.Speakers}/> : ""}
 
                   <div className="no-pad no-margin" style={{display: showBuyTickets ? 'block':'none', textAlign: 'center'}}>
-                    {soldOut ? <span className="primary-btn"><a className="btn-primary" href="" rel="noreferrer noopener" target="_blank">Sold Out</a></span>: <span className="primary-btn"><a className="btn-primary" href="https://reg.connectevents.io/ConnectEvents/rtech2022/" rel="noreferrer noopener" target="_blank">Buy Tickets</a></span>}
+                    {soldOut ? <span className="primary-btn"><a className="btn-primary" href="" rel="noreferrer noopener" target="_blank">Sold Out</a></span>: <span className="primary-btn"><a className="btn-primary" href={session.data.url} rel="noreferrer noopener" target="_blank">Register</a></span>}
                   </div>
 
                   <hr/>

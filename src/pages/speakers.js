@@ -11,7 +11,7 @@ export default ({ data }) => {
   return (
     <div>
     <Helmet>
-    <title>Speakers | REFACTR.TECH 2023</title>
+    <title>Speakers | REFACTR.TECH 2024</title>
     <meta
       name="description"
       content="REFACTR.TECH features over 50 speakers from all over the tech industry with topics from Gatsby.js to Machine Learning to Engineering Leadership."
@@ -25,7 +25,7 @@ export default ({ data }) => {
     <meta property="og:url" content="https://www.refactr.tech/" />
     <meta
       property="og:title"
-      content="Speakers | REFACTR.TECH 2023"
+      content="Speakers | REFACTR.TECH 2024"
     />
     <meta
       property="og:description"
@@ -54,7 +54,7 @@ export default ({ data }) => {
     <meta name="twitter:site" content="@RefactrTech" />
     <meta
       name="twitter:title"
-      content="Speakers | REFACTR.TECH 2023"
+      content="Speakers | REFACTR.TECH 2024"
     />
     <meta
       name="twitter:description"
@@ -66,12 +66,12 @@ export default ({ data }) => {
       content="https://refactr.tech/img/conference/marketing_header.png"
     />
     <meta name="twitter:label1" content="Date" />
-  <meta name="twitter:data1" content="October 27" />
+  <meta name="twitter:data1" content="" />
   <meta name="twitter:label2" content="Location" />
   <meta name="twitter:data2" content="Atlanta, GA" />
   
     {/* <!-- Schema.org markup for Google+ --> */}
-    <meta itemprop="name" content="Speakers | REFACTR.TECH 2023" />
+    <meta itemprop="name" content="Speakers | REFACTR.TECH 2024" />
     <meta
       itemprop="description"
       content="REFACTR.TECH features over 50 speakers from all over the tech industry with topics from Gatsby.js to Machine Learning to Engineering Leadership."
@@ -117,19 +117,18 @@ export default ({ data }) => {
       </div>
 
 
-      <div className="counter-up-area ptb60 bg-counter parallax">
+      {/*<div className="counter-up-area ptb60 bg-counter parallax">
           <div className="container">
             <div className="row">
               <div className="col-sm-12">
                 <div className="single-counter xs-mb40">
                   <div className="count-content" style={{ textAlign: "center"}}>
                     <span className="count" style={{ fontSize: "3.1em"}}>Register</span>
-                    <p style={{ fontSize: "1.3em", fontWeight: "400", textTransform:"none"}}>Get your ticket to attend REFACTR.TECH in Atlanta, October 27 for a day full of keynotes, tech sessions and demos, and of course, parties! 
+                    <p style={{ fontSize: "1.3em", fontWeight: "400", textTransform:"none"}}>Get your ticket to attend REFACTR.TECH in Atlanta,  for a day full of keynotes, tech sessions and demos, and of course, parties! 
                     With <Link style={{ color: "white", textDecoration: "underline"}} to="/sessions">topics ranging from software engineering to leadership to data and community,</Link> there’s something for everybody!</p>
                       <div className="row justify-content-center">
                         <div className="col-md-4 col-sm-12">
                           <div className="primary-btn text-center mt30">
-                              {/* <a href="https://2019.refactr.tech" class="btn-primary" style={{border: "2px solid #fff"}}>2019 Conference</a> */}
                               <OutboundLink href="https://reg.connectevents.io/ConnectEvents/rtech2023/" target="_blank" class="btn-primary" style={{border: "2px solid #fff", fontSize: "1.5em"}}>Get Tickets Now</OutboundLink> 
                           </div>
                         </div>
@@ -140,7 +139,7 @@ export default ({ data }) => {
               </div>
             </div>
           </div>
-        </div>
+  </div>*/}
 
       <Footer />
     </div>

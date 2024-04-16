@@ -51,7 +51,7 @@ export default () => (
       <meta name="twitter:site" content="@RefactrTech" />
       <meta
         name="twitter:title"
-        content="REFACTR.TECH 2023"
+        content="REFACTR.TECH 2024"
       />
       <meta
         name="twitter:description"

@@ -17,12 +17,12 @@ export default () =>
 
         <div className="col-lg-6 offset-1">
             <div id="mc_embed_signup" className="f-content">
-                <div className="inner-content">
+                {/*<div className="inner-content">
                     <div className="f-icon">
                         <i className="fa fa-map-marker"></i>
                     </div>
                     <span><strong><a style={{color: "white"}} href="https://www.atlantatechvillage.com/" target="_blank">Atlanta Tech Village</a></strong><br/> 3423 Piedmont Rd NE<br/> Atlanta, GA 30305</span>
-                </div>
+</div>*/}
                 <p>Don't miss the buzz about our speakers, sessions and events! Sign up below to get the latest news about REFACTR.TECH right in your inbox. </p>
                 {/* mailchimp embed form component starts here */}
                 
@@ -35,6 +35,7 @@ export default () =>
                         <li><a href="https://www.instagram.com/RefactrTech/"><i className="fa fa-instagram"></i></a></li>
                         <li><a href="https://www.youtube.com/channel/UCfBdXCYPCHEXX8ISwOQM08A"><i className="fa fa-youtube"></i></a></li>
                         <li><a href="mailto:hello@refactr.tech"><i className="fa fa-envelope-square"></i></a></li>
+                        <li><a href="https://www.instagram.com/RefactrTech/"><i className="fa fa-discord"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -43,7 +44,7 @@ export default () =>
     <div className="row">
         <div className="col-lg-12">
             <div className="copyright">
-                <p>©2018-2023 ConnectEvents.io&nbsp;&nbsp;&nbsp;&nbsp;
+                <p>©2018-2024 ConnectEvents.io&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="/about">About</a>&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="/privacy-policy">Privacy Policy</a>&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="/terms-and-conditions">Terms and Conditions</a>&nbsp;&nbsp;&nbsp;&nbsp;

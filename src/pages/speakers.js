@@ -14,7 +14,7 @@ export default ({ data }) => {
     <title>Speakers | REFACTR.TECH 2024</title>
     <meta
       name="description"
-      content="REFACTR.TECH features over 50 speakers from all over the tech industry with topics from Gatsby.js to Machine Learning to Engineering Leadership."
+      content="A new lineup of events - meetups, panels, workshops, and social gatherings - catering to all skill levels and interests. Experience the REFACTR.TECH vibe across multiple events all year!"
     />
     
   

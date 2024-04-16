@@ -15,10 +15,10 @@ export default ({ data }) => (
 
   <div>
   <Helmet>
-  <title>Sessions | REFACTR.TECH 2024</title>
+  <title>Events | REFACTR.TECH 2024</title>
   <meta
     name="description"
-    content="REFACTR.TECH features over 50 sessions and 4 keynotes, with topics from Gatsby.js to Machine Learning to Engineering Leadership."
+    content="A new lineup of events - meetups, panels, workshops, and social gatherings - catering to all skill levels and interests. Experience the REFACTR.TECH vibe across multiple events all year!"
   />
 
   {/* <!-- Open Graph data --> */}
@@ -28,24 +28,24 @@ export default ({ data }) => (
   <meta property="og:url" content="https://www.refactr.tech/" />
   <meta
     property="og:title"
-    content="Sessions | REFACTR.TECH 2024"
+    content="Events | REFACTR.TECH 2024"
   />
   <meta
     property="og:description"
-    content="REFACTR.TECH features 50 sessions and 4 keynotes, with topics from Gatsby.js to Machine Learning to Engineering Leadership."
+    content="A new lineup of events - meetups, panels, workshops, and social gatherings - catering to all skill levels and interests. Experience the REFACTR.TECH vibe across multiple events all year!"
   />
   <meta 
       name="keywords" 
-      content="Atlanta, technology, conference, diversity, inclusion, accessibility, software, frontend, fullstack, web development, leadership, career, javascript, react, angular, serverless, machine learning, product, ux, ui, design, social impact" 
+      content="Atlanta, technology, events, diversity, inclusion, accessibility, software, frontend, fullstack, web development, leadership, career, javascript, react, angular, serverless, machine learning, product, ux, ui, design, social impact" 
   />
 
   <meta
     property="og:image"
-    content="https://refactr.tech/img/conference/marketing_header.png"
+    content="https://refactr.tech/img/conference/Home_5.svg"
   />
   <meta
     property="og:image:secure_url"
-    content="https://refactr.tech/img/conference/marketing_header.png"
+    content="https://refactr.tech/img/conference/Home_5.svg"
   />
   <meta property="og:image:width" content="500" />
   <meta property="og:image:height" content="260" />
@@ -57,16 +57,16 @@ export default ({ data }) => (
   <meta name="twitter:site" content="@RefactrTech" />
   <meta
     name="twitter:title"
-    content="Sessions | REFACTR.TECH 2024"
+    content="Events | REFACTR.TECH 2024"
   />
   <meta
     name="twitter:description"
-    content="REFACTR.TECH features 50 sessions and 4 keynotes, with topics from Gatsby.js to Machine Learning to Engineering Leadership."
+    content="A new lineup of events - meetups, panels, workshops, and social gatherings - catering to all skill levels and interests. Experience the REFACTR.TECH vibe across multiple events all year!"
   />
   <meta name="twitter:domain" content="https://refactr.tech" />
   <meta
     name="twitter:image"
-    content="https://refactr.tech/img/conference/marketing_header.png"
+    content="https://refactr.tech/img/conference/Home_5.svg"
   />
   <meta name="twitter:label1" content="Date" />
   <meta name="twitter:data1" content="" />
@@ -74,12 +74,12 @@ export default ({ data }) => (
   <meta name="twitter:data2" content="Atlanta, GA" />
 
   {/* <!-- Schema.org markup for Google+ --> */}
-  <meta itemprop="name" content="Sessions | REFACTR.TECH 2024" />
+  <meta itemprop="name" content="Events | REFACTR.TECH 2024" />
   <meta
     itemprop="description"
-    content="REFACTR.TECH features 50 sessions and 4 keynotes, with topics from Gatsby.js to Machine Learning to Engineering Leadership."
+    content="A new lineup of events - meetups, panels, workshops, and social gatherings - catering to all skill levels and interests. Experience the REFACTR.TECH vibe across multiple events all year!"
   />
-  <meta itemprop="image" content="/img/conference/marketing_header.png" />
+  <meta itemprop="image" content="/img/conference/Home_5.svg" />
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1, shrink-to-fit=no"

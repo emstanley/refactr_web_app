@@ -30,7 +30,7 @@ export default ({ data }) => (
       <title>REFACTR.TECH 2024 -  Atlanta, GA</title>
       <meta
         name="description"
-        content="The Southeast's premier tech conference with a focus on inclusion."
+        content="The Southeast's premier tech community with a focus on inclusion."
       />
       
 
@@ -45,20 +45,20 @@ export default ({ data }) => (
       />
       <meta
         property="og:description"
-        content="The Southeast's premier multi-track tech conference with a focus on inclusion."
+        content="The Southeast's premier tech community with a focus on inclusion."
       />
       <meta 
         name="keywords" 
-        content="Atlanta, virtual, technology, conference, diversity, inclusion, accessibility, software, frontend, fullstack, web development, leadership, career, javascript, react, angular, serverless, machine learning, product, ux, ui, design, social impact" 
+        content="Atlanta, virtual, technology, events, diversity, inclusion, accessibility, software, frontend, fullstack, web development, leadership, career, javascript, react, angular, serverless, machine learning, product, ux, ui, design, social impact" 
       />
 
       <meta
         property="og:image"
-        content="https://refactr.tech/img/conference/marketing_header.png"
+        content="https://refactr.tech/img/conference/Home_5.svg"
       />
       <meta
         property="og:image:secure_url"
-        content="https://refactr.tech/img/conference/marketing_header.png"
+        content="https://refactr.tech/img/conference/Home_5.svg"
       />
       <meta property="og:image:width" content="500" />
       <meta property="og:image:height" content="260" />
@@ -73,12 +73,12 @@ export default ({ data }) => (
       />
       <meta
         name="twitter:description"
-        content="The Southeast's premier multi-track tech conference with a focus on inclusion."
+        content="The Southeast's premier tech community with a focus on inclusion."
       />
       <meta name="twitter:domain" content="https://refactr.tech" />
       <meta
         name="twitter:image"
-        content="https://refactr.tech/img/conference/marketing_header.png"
+        content="https://refactr.tech/img/conference/Home_5.svg"
       />
       <meta name="twitter:label1" content="Date" />
       <meta name="twitter:data1" content="" />
@@ -89,9 +89,9 @@ export default ({ data }) => (
       <meta itemprop="name" content="REFACTR.TECH 2024" />
       <meta
         itemprop="description"
-        content="The Southeast's premier multi-track tech conference with a focus on inclusion."
+        content="The Southeast's premier tech community with a focus on inclusion."
       />
-      <meta itemprop="image" content="/img/conference/marketing_header.png" />
+      <meta itemprop="image" content="/img/conference/Home_5.svg" />
       <meta
         name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no"

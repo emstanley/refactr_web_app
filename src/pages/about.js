@@ -33,16 +33,16 @@ export default ({ data }) => {
     />
     <meta 
         name="keywords" 
-        content="Atlanta, technology, conference, diversity, inclusion, accessibility, software, frontend, fullstack, web development, leadership, career, javascript, react, angular, serverless, machine learning, product, ux, ui, design, social impact" 
+        content="Atlanta, technology, events, diversity, inclusion, accessibility, software, frontend, fullstack, web development, leadership, career, javascript, react, angular, serverless, machine learning, product, ux, ui, design, social impact" 
     />
 
     <meta
       property="og:image"
-      content="https://refactr.tech/img/conference/marketing_header.png"
+      content="https://refactr.tech/img/conference/Home_5.svg"
     />
     <meta
       property="og:image:secure_url"
-      content="https://refactr.tech/img/conference/marketing_header.png"
+      content="https://refactr.tech/img/conference/Home_5.svg"
     />
     <meta property="og:image:width" content="500" />
     <meta property="og:image:height" content="260" />
@@ -63,7 +63,7 @@ export default ({ data }) => {
     <meta name="twitter:domain" content="https://refactr.tech" />
     <meta
       name="twitter:image"
-      content="https://refactr.tech/img/conference/marketing_header.png"
+      content="https://refactr.tech/img/conference/Home_5.svg"
     />
     <meta name="twitter:label1" content="Date" />
     <meta name="twitter:data1" content="" />
@@ -76,7 +76,7 @@ export default ({ data }) => {
       itemprop="description"
       content="REFACTR.TECH is all about growing and showcasing powerful voices of marginalized people and allies in tech."
     />
-    <meta itemprop="image" content="/img/conference/marketing_header.png" />
+    <meta itemprop="image" content="/img/conference/Home_5.svg" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"

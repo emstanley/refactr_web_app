@@ -27,7 +27,7 @@ import 'react-toastify/dist/ReactToastify.css';
 export default ({ data }) => (
   <div>
     <Helmet>
-      <title>REFACTR.TECH 2023 - October 27, Atlanta, GA</title>
+      <title>REFACTR.TECH 2024 -  Atlanta, GA</title>
       <meta
         name="description"
         content="The Southeast's premier tech conference with a focus on inclusion."
@@ -41,7 +41,7 @@ export default ({ data }) => (
       <meta property="og:url" content="https://www.refactr.tech/" />
       <meta
         property="og:title"
-        content="REFACTR.TECH 2023 - October 27, Atlanta, GA"
+        content="REFACTR.TECH 2024 -  Atlanta, GA"
       />
       <meta
         property="og:description"
@@ -69,7 +69,7 @@ export default ({ data }) => (
       <meta name="twitter:site" content="@RefactrTech" />
       <meta
         name="twitter:title"
-        content="REFACTR.TECH 2023 - Atlanta October 27"
+        content="REFACTR.TECH 2024 - Atlanta"
       />
       <meta
         name="twitter:description"
@@ -81,12 +81,12 @@ export default ({ data }) => (
         content="https://refactr.tech/img/conference/marketing_header.png"
       />
       <meta name="twitter:label1" content="Date" />
-      <meta name="twitter:data1" content="October 27" />
+      <meta name="twitter:data1" content="" />
       <meta name="twitter:label2" content="Location" />
       <meta name="twitter:data2" content="Atlanta, GA" />
 
       {/* <!-- Schema.org markup for Google+ --> */}
-      <meta itemprop="name" content="REFACTR.TECH 2023" />
+      <meta itemprop="name" content="REFACTR.TECH 2024" />
       <meta
         itemprop="description"
         content="The Southeast's premier multi-track tech conference with a focus on inclusion."
@@ -159,7 +159,7 @@ export default ({ data }) => (
                     <img
                     className="img-fluid"
                     src="/img/logo/refactr-23-date-location.svg"
-                    alt="Conference date:  October 27, 2022"
+                    alt="Conference date:   2022"
                   />
                 </div>*/}
                 </div>
@@ -688,7 +688,7 @@ export default ({ data }) => (
                   <div className="section-title text-center">
                     <div className="title-text mb30">
                       <h2>Register</h2>
-                      <p style={{marginTop: "15px", fontSize: "1.3em"}}>Get your ticket to attend REFACTR.TECH in Atlanta, October 27 for a day full of keynotes, tech sessions and demos, and of course, parties! 
+                      <p style={{marginTop: "15px", fontSize: "1.3em"}}>Get your ticket to attend REFACTR.TECH in Atlanta,  for a day full of keynotes, tech sessions and demos, and of course, parties! 
                         With <Link to="/sessions">topics ranging from software engineering to leadership to data and community,</Link> there’s something for everybody!
                       </p>
                       <div className="row justify-content-center">

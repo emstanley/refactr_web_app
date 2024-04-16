@@ -7,7 +7,7 @@ export const SpeakerSession = ({title, anchor_truncated, Track}) => (
     <p>
       <Link className={`pill `+`track-${Track}`.replace(/[\s&$!]+/g, "")}
       title={`See more ${Track} sessions`}  
-      to={`/sessions/#${Track}`.replace(/\s+/g, "")}>
+      to={`/events/#${Track}`.replace(/\s+/g, "")}>
         {Track}
       </Link>
         &nbsp;

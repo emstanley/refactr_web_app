@@ -118,19 +118,16 @@ export default class NavigationBar extends Component {
                       </Link>
                   </li>*/}
 
-                    <li className="nav-item">
+                    {/*<li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/sessions">
                         Sessions
                       </Link>
-                    </li>
+                </li>*/}
 
-                    <li className="nav-item">
-                    <OutboundLink
-                    className="nav-link"
-                    href="https://www.meetup.com/refactr-tech/"
-                    rel="noreferrer noopener"
-                    target="_blank">Events
-                    </OutboundLink>
+                <li className="nav-item">
+                <Link className="nav-link" activeClassName="active" to="/events">
+                Events
+                </Link>
               </li>
 
                     {/*<li className="nav-item">

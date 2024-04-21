@@ -113,7 +113,7 @@ export default ({ data }) => {
       </div>
       {/*About Us Area End Here*/}
       {/*Conference Synopsis Area Start Here*/}
-      <div className="conference-synopsis-area about pad100">
+      <div className="conference-synopsis-area about ptb">
         <div className="container">
           <div className="row">
             <div className="col-lg-3 xs-mb40">
@@ -131,32 +131,24 @@ export default ({ data }) => {
                   </div>
                 </div>
                 <p>
-                  REFACTR.TECH is all about growing and showcasing powerful
-                  voices of marginalized people and allies in tech. For three
-                  days, REFACTR.TECH focuses on technology while creating a safe
-                  space for thoughtful and nuanced conversations around
-                  diversity, inclusion, and intersectionality in tech.
+                REFACTR.TECH provides a platform to highlight powerful and unique stories often untold in tech. 
+                We aim to foster collaboration and thoughtful discussions around technology. 
+                We offer a holistic view to learning technical skills, focusing on career development, 
+                mental health, community building, and leadership. This sets us apart from many technical 
+                conferences and meetups that don't usually offer such a comprehensive approach.
                 </p>
                 <p>
-                  At REFACTR.TECH, we’ll focus on creating an inclusive
-                  environment which features marginalized people and allies
-                  doing amazing work. We offer a combination of workshops,
-                  keynote, and track sessions to expand knowledge, hone
-                  technical skills, and make important connections.
+                REFACTR.TECH provides a welcoming environment through a range of events, including meetups, 
+                panels, workshops, social events, and conferences. Our events cater to a wide range of 
+                experience levels and interests, with technical topics for intermediate to senior developers 
+                and beginner-friendly content.
                 </p>
-                <p>
-                  REFACTR.TECH provides content valuable to a wide range of
-                  experience levels and interests. We’ll offer highly technical
-                  topics of interest to intermediate to senior developers, as
-                  well as beginner-friendly sessions and workshops. Leadership,
-                  career development and product tracks are appropriate for any
-                  experience level.
-                </p>
+                
               </div>
             </div>
             {/* /col end*/}
 
-            <div className="col-lg-3 motivational-concepts-area d-none d-xl-block">
+            {/*<div className="col-lg-3 motivational-concepts-area d-none d-xl-block">*/}
               {/*<div className="testimonial-wrapper bg-color" style={{border: "1px solid #c9c9c9"}}>
                 <div className="section-title text-center">
                   <p style={{fontSize:"1.3em", fontWeight:"bold", color:"#1E1C7F"}}>SUBMIT YOUR RESUME</p>
@@ -178,7 +170,7 @@ export default ({ data }) => {
                   <p><OutboundLink href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank" style={{color: "#C418A3"}}>Reserve Your Book Here</OutboundLink></p>
                 </div>
               </div>*/}
-            </div>
+            {/*</div>*/}
             {/* /col end*/}
 
 

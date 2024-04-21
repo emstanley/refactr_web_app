@@ -420,12 +420,22 @@ export default ({ data }) => (
                       <div className="col-md-3 col-sm-12">
                         <div className="primary-btn text-center mt30">
                             {/* <a href="https://2019.refactr.tech" class="btn-primary" style={{border: "2px solid #fff"}}>2019 Conference</a> */}
-                            <a href="https://tech.us19.list-manage.com/subscribe?u=5ae8995a4bf065a3c7cd6ad50&id=e8f624f474" class="btn-primary" style={{border: "2px solid #fff"}}>Subscribe &nbsp;&nbsp;<i className="fa fa-external-link"/></a> 
+                            <a href="https://tech.us19.list-manage.com/subscribe?u=5ae8995a4bf065a3c7cd6ad50&id=e8f624f474" class="btn-primary" style={{border: "2px solid #fff"}}>Newsletter &nbsp;&nbsp;<i className="fa fa-external-link"/></a> 
                         </div>
                       </div>
                       <div className="col-md-3 col-sm-12">
                         <div className="primary-btn text-center mt30">
-                            <a href="/updates" class="btn-primary" style={{border: "2px solid #fff"}}>Updates</a>
+                            <a href="https://www.meetup.com/refactr-tech/" class="btn-primary" style={{border: "2px solid #fff"}}>Meetup &nbsp;&nbsp;<i className="fa fa-external-link"/></a>
+                        </div>
+                      </div> 
+                      <div className="col-md-3 col-sm-12">
+                        <div className="primary-btn text-center mt30">
+                            <a href="https://discord.gg/SqDAxbAKHZ" class="btn-primary" style={{border: "2px solid #fff"}}>Discord &nbsp;&nbsp;<i className="fa fa-external-link"/></a>
+                        </div>
+                      </div> 
+                      <div className="col-md-3 col-sm-12">
+                        <div className="primary-btn text-center mt30">
+                            <a href="/updates" class="btn-primary" style={{border: "2px solid #fff"}}>Blog</a>
                         </div>
                       </div>   
                     </div>

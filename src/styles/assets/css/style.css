@@ -134,7 +134,7 @@ ul {
     -o-transition: all 0.4s;
     transition: all 0.4s; }
 
-.primary-btn a.btn-primary {
+.primary-btn a.btn-primary, .primary-btn button.btn-primary {
   color: #fff;
   font-size: 14px;
   font-weight: 500;

@@ -7,6 +7,8 @@ import { SpeakerCardList } from "../components/SpeakerCardList";
 import { KeynoteSpeakerList } from "../components/KeynoteSpeakerList";
 import { FeaturedSponsorsList } from "../components/FeaturedSponsorsList";
 import { CurrentSponsorsList } from "../components/CurrentSponsorsList";
+import { SessionCardList } from "../components/SessionCardList";
+
 
 //import { OnlineSchedule } from "../components/OnlineSchedule";
 import NavigationBar from "../components/NavigationBar";
@@ -96,6 +98,12 @@ export default ({ data }) => (
         name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no"
       />
+
+      {/* Noscript content for added SEO -->*/}
+      <noscript>{`<a href="https://www.eventbrite.com/e/refactrtech-panel-preparing-for-a-career-in-ai-tickets-879099479207" class="btn-primary" rel="noopener noreferrer" target="_blank">Buy Tickets on Eventbrite</a>`}</noscript>
+
+      <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
     </Helmet>
     <div>
       {/*Main Container Start Here*/}
@@ -445,6 +453,55 @@ export default ({ data }) => (
           </div>
         </div>
       </div>
+
+
+
+        {/*Event CTA Starts Here*/}
+        <div className="our-sponsors-area ptb50 bg-color">
+          <div className="container">
+
+          <div className="row">
+              <div className="col-lg-12">
+                  <div className="section-title text-center">
+                      <div className="title-text mtb30 xs-mb40">
+                          <h2>Next Event</h2>
+
+
+                      </div>
+                  </div>
+                  <SessionCardList items={data.featuredSessions.edges} showBuyTickets={false}  soldOut={false} showTrack={false}/>
+
+              </div>
+          </div>
+
+          <div className="row pad-bot30">
+                <div className="col-lg-3">
+                    <div className="primary-btn text-center">
+                      {/* You can customize this button any way you like */}
+                      <button className="btn-primary" id="eventbrite-widget-modal-trigger-879099479207" type="button"><i class="fa fa-ticket"></i> &nbsp;Reserve Your Spot</button>
+
+                      <script type="text/javascript">{`
+                                var exampleCallback = function() {
+                                    console.log('Order complete!')
+                                };
+
+                                window.EBWidgets.createWidget({
+                                    widgetType: 'checkout',
+                                    eventId: '879099479207',
+                                    modal: true,
+                                    modalTriggerElementId: 'eventbrite-widget-modal-trigger-879099479207',
+                                    onOrderComplete: exampleCallback
+                                });
+                                `}</script>
+                    
+                    
+                  </div>
+                </div>
+            </div>
+
+          </div>
+        </div>
+        {/*Event CTA Ends Here*/}
 
 
         
@@ -953,6 +1010,57 @@ export const speakerPageQuery = graphql`
               url
             }
             pastSponsor_url
+          }
+        }
+      }
+    }
+
+    featuredSessions: allAirtable(
+      filter: { table: { eq: "Sessions" }, data: { Feature: { eq: true } } }
+      sort: { fields: [data___Track, data___start_time] }
+      ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          data {
+            Abstract
+            speaker_display_name
+            url
+            Track
+            title
+            speaker_url
+            date_friendly
+            end_date_friendly
+            ends
+            Day
+            Duration
+            Feature
+            speaker_pic {
+              thumbnails {
+                large {
+                  url
+                }
+              }
+            }
+            Speakers {
+              data {
+                speaker_name
+                headshot {
+                  localFiles {
+                    childImageSharp {
+                      fluid(maxWidth: 512, maxHeight:512) {
+                        ...GatsbyImageSharpFluid_tracedSVG
+                      }
+                    }
+                  }
+                }
+                role
+                company
+                speaker_anchor
+              }
+            }
           }
         }
       }

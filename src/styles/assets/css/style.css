@@ -135,11 +135,12 @@ ul {
     transition: all 0.4s; }
 
 .primary-btn a.btn-primary, .primary-btn button.btn-primary {
-  color: #fff;
+  color: #fff !important;
   font-size: 14px;
   font-weight: 500;
+  line-height: 24px !important;
 /*   line-height: 55px;
- */  padding: 10px 25px;
+ */  padding: 10px 25px !important;
   border-radius: 28px;
   display: inline-block;
   text-transform: capitalize;
@@ -154,10 +155,15 @@ ul {
     background-color: #4125dd !important;
     border-color: #4125dd !important; }
   .primary-btn a.btn-primary:hover, .accent-btn a.btn-accent:hover {
-    background: #C418A3; }
+    background: #C418A3;
+    border-color: #C418A3; }
   .disabled {
     pointer-events: none;
     opacity: 0.6;
+  }
+
+  span.addeventatc_icon.atc_node.notranslate {
+    display: none !important;
   }
 
     .primary-btn a.btn-hero{

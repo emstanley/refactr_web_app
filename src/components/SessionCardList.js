@@ -2,7 +2,7 @@ import React from "react";
 import _ from "lodash";
 import { SessionSpeakerList } from "../components/SessionSpeakerList";
 
-export const SessionCardList = ({ items, showBuyTickets, soldOut }) => {
+export const SessionCardList = ({ items, showBuyTickets, soldOut, showTrack }) => {
   const sessions_data = items.map(edge => edge.node);
   //const sessions_data = items.filter(edge => edge.node.data.Status === 'Confirmed');
   const tracks = _.groupBy(sessions_data, "data.Track");
@@ -15,7 +15,7 @@ export const SessionCardList = ({ items, showBuyTickets, soldOut }) => {
         {/* A track title */}
         <div className="section-title mt40 mb30">
           <div className="title-text pl mt30 mb30">
-            <h2 className={"track-title-"+track.replace(/[\s&$!]+/g, "")}>{track}</h2>
+            <h2 style={{display: showTrack ? 'block':'none'}} className={"track-title-"+track.replace(/[\s&$!]+/g, "")}>{track}</h2>
           </div>
         </div>
 

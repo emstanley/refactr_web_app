@@ -258,7 +258,7 @@ export default ({ data }) => (
       </div>
     </section>
       
-    <SessionCardList items={data.allAirtable.edges} showBuyTickets={true}  soldOut={false}/>
+    <SessionCardList items={data.allAirtable.edges} showBuyTickets={true}  soldOut={false} showTrack={true}/>
 
     {/*<div className="counter-up-area ptb60 bg-counter parallax">
           <div className="container">

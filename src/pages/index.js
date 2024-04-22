@@ -7,6 +7,8 @@ import { SpeakerCardList } from "../components/SpeakerCardList";
 import { KeynoteSpeakerList } from "../components/KeynoteSpeakerList";
 import { FeaturedSponsorsList } from "../components/FeaturedSponsorsList";
 import { CurrentSponsorsList } from "../components/CurrentSponsorsList";
+import { SessionCardList } from "../components/SessionCardList";
+
 
 //import { OnlineSchedule } from "../components/OnlineSchedule";
 import NavigationBar from "../components/NavigationBar";
@@ -96,6 +98,14 @@ export default ({ data }) => (
         name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no"
       />
+
+      {/* Noscript content for added SEO -->*/}
+      <noscript>{`<a href="https://www.eventbrite.com/e/refactrtech-panel-preparing-for-a-career-in-ai-tickets-879099479207" class="btn-primary" rel="noopener noreferrer" target="_blank">Buy Tickets on Eventbrite</a>`}</noscript>
+
+      <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+      <script type="text/javascript" src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+
     </Helmet>
     <div>
       {/*Main Container Start Here*/}
@@ -445,6 +455,54 @@ export default ({ data }) => (
           </div>
         </div>
       </div>
+
+
+
+        {/*Event CTA Starts Here*/}
+        <div className="our-sponsors-area ptb50 bg-color">
+          <div className="container">
+
+          <div className="row">
+              <div className="col-lg-12">
+                  <div className="section-title text-center">
+                      <div className="title-text mtb30 xs-mb40">
+                          <h2>Next Event</h2>
+
+
+                      </div>
+                  </div>
+                  <SessionCardList items={data.featuredSessions.edges} showBuyTickets={false}  soldOut={false} showTrack={false}/>
+
+              </div>
+          </div>
+
+          <div className="row pad-bot30">
+                <div className="col-lg-3 col-sm-12">
+                    <div className="primary-btn text-center">
+                      {/* You can customize this button any way you like */}
+                      <a href="https://www.eventbrite.com/e/refactrtech-panel-preparing-for-a-career-in-ai-tickets-879099479207" className="btn-primary" target="_blank"><i class="fa fa-ticket"></i> &nbsp;Reserve Your Spot</a>
+                    </div>
+                </div>
+                <div className="col-md-3 col-sm-12">
+                        <div className="primary-btn text-center">
+                        <a title="Add to Calendar" className="addeventatc btn-primary" data-id="yl21337680" href="https://www.addevent.com/event/yl21337680" target="_blank"><i class="fa fa-calendar-plus-o"></i>&nbsp;&nbsp;&nbsp;Add to Calendar</a>
+                        </div>
+                </div>
+                <div className="col-md-3 col-sm-12">
+                  <div className="primary-btn text-center">
+                  <a href="https://www.meetup.com/refactr-tech/" className="btn-primary" target="_blank"><i class="fa fa-meetup"></i> &nbsp;Join Meetup For Updates</a>
+                  </div>
+                </div> 
+                <div className="col-md-3 col-sm-12">
+                  <div className="primary-btn text-center">
+                  <a href="/events" className="btn-primary" target="_blank"><i class="fa fa-list-ul"></i> &nbsp;See All Events</a>
+                  </div>
+                </div>
+            </div>
+
+          </div>
+        </div>
+        {/*Event CTA Ends Here*/}
 
 
         
@@ -953,6 +1011,57 @@ export const speakerPageQuery = graphql`
               url
             }
             pastSponsor_url
+          }
+        }
+      }
+    }
+
+    featuredSessions: allAirtable(
+      filter: { table: { eq: "Sessions" }, data: { Feature: { eq: true } } }
+      sort: { fields: [data___Track, data___start_time] }
+      ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          data {
+            Abstract
+            speaker_display_name
+            url
+            Track
+            title
+            speaker_url
+            date_friendly
+            end_date_friendly
+            ends
+            Day
+            Duration
+            Feature
+            speaker_pic {
+              thumbnails {
+                large {
+                  url
+                }
+              }
+            }
+            Speakers {
+              data {
+                speaker_name
+                headshot {
+                  localFiles {
+                    childImageSharp {
+                      fluid(maxWidth: 512, maxHeight:512) {
+                        ...GatsbyImageSharpFluid_tracedSVG
+                      }
+                    }
+                  }
+                }
+                role
+                company
+                speaker_anchor
+              }
+            }
           }
         }
       }

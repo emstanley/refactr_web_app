@@ -105,6 +105,7 @@ export default ({ data }) => (
       <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
 
       <script type="text/javascript" src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+      <script type="text/javascript" src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
 
     </Helmet>
     <div>

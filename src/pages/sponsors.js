@@ -81,6 +81,16 @@ const filterSponsorsByTier = (data) => {
             sponsors: []
         },
         {
+          tier: 'Annual Host',
+          title: 'Hosting Sponsors',
+          sponsors: []
+      },
+      {
+          tier: 'Past Sponsor',
+          title: 'Featured Past Sponsors',
+          sponsors: []
+      },
+        {
           tier: 'Community',
           title: 'Community and Media Partners',
           sponsors: []
@@ -91,9 +101,9 @@ const filterSponsorsByTier = (data) => {
             item.tier.toLowerCase() === sponsor.node.data.tier[0].toLowerCase()
         );
         let addSponsor = {
-            company_name: sponsor.node.data.company_name,
-            url: sponsor.node.data.url,
-            logo: sponsor.node.data.logo,
+            company_name: sponsor.node.data.sponsor_name,
+            url: sponsor.node.data.sponsor_url,
+            logo: sponsor.node.data.sponsor_logo,
             tier: sponsor.node.data.tier
         };
         idx.sponsors.push(addSponsor);
@@ -163,7 +173,7 @@ export default ({ data }) => {
                 <div className="col-lg-12">
                     <div className="section-title text-center">
                         <div className="title-text mb50 xs-mb40">
-                            <h2>Past Sponsors</h2>
+                            <h2>Sponsors</h2>
                         </div>
                         <hr />
                         <div className="single-sponsers">
@@ -187,7 +197,7 @@ export default ({ data }) => {
             <div className="row">
                 <div className="col-lg-12">
                     <div className="primary-btn text-center">
-                        <a href="https://refactrtech.typeform.com/to/ouMvCw" class="btn-primary" rel="noreferrer noopener" target="_blank">Become a Sponsor</a>
+                        <a href="https://airtable.com/appjEFNuK5jwLsL1K/pagnYbn239nxX47BQ/form" class="btn-primary" rel="noreferrer noopener" target="_blank">Become a Sponsor</a>
                     </div>
                 </div>
             </div>
@@ -240,17 +250,12 @@ export const sponsorPageQuery = graphql`
             slug
           }
           data {
-            company_name
-            url
+            sponsor_name
+            sponsor_url
             tier
-            logo {
-              localFiles {
-                childImageSharp {
-                  fluid(maxWidth: 512, maxHeight: 512) {
-                    ...GatsbyImageSharpFluid_tracedSVG
-                  }
-                }
-              }
+            sponsor_logo {
+              filename
+              url
             }
           }
         }

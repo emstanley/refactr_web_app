@@ -105,6 +105,7 @@ export default ({ data }) => (
       <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
 
       <script type="text/javascript" src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+      <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
 
     </Helmet>
     <div>
@@ -480,12 +481,12 @@ export default ({ data }) => (
                 <div className="col-lg-3 col-sm-12">
                     <div className="primary-btn text-center mt30">
                       {/* You can customize this button any way you like */}
-                      <a href="https://www.eventbrite.com/e/refactrtech-panel-preparing-for-a-career-in-ai-tickets-879099479207" className="btn-primary" target="_blank"><i class="fa fa-ticket"></i> &nbsp;Reserve Your Spot</a>
+                      <a href="https://www.eventbrite.com/e/hybrid-refactr-x-react-robins-new-navigation-api-oop-interview-tips-tickets-931967538997" className="btn-primary" target="_blank"><i class="fa fa-ticket"></i> &nbsp;Reserve Your Spot</a>
                     </div>
                 </div>
                 <div className="col-md-3 col-sm-12">
                         <div className="primary-btn text-center mt30">
-                        <a title="Add to Calendar" className="addeventatc btn-primary" data-id="yl21337680" href="https://www.addevent.com/event/yl21337680" target="_blank"><i class="fa fa-calendar-plus-o"></i>&nbsp;&nbsp;&nbsp;Add to Calendar</a>
+                        <a title="Add to Calendar" className="addeventatc btn-primary" data-id="Uh22301518" href="https://www.addevent.com/event/Uh22301518" target="_blank"><i class="fa fa-calendar-plus-o"></i>&nbsp;&nbsp;&nbsp;Add to Calendar</a>
                         </div>
                 </div>
                 <div className="col-md-3 col-sm-12">
@@ -638,22 +639,47 @@ export default ({ data }) => (
         <div className="our-sponsors-area ptb50 bg-color">
           <div className="container">
 
-          {/*<div className="row">
+          <div className="row">
                 <div className="col-lg-12">
                     <div className="section-title text-center">
-                      <div className="title-text mb30">
-                        <h2>Sponsors</h2>
+                      <div className="title-text">
+                        <h2>Platinum Sponsor</h2>
                       </div>
                     </div>
                   </div>
               </div>
 
-        <FeaturedSponsorsList data={data.featuredSponsors.edges} />*/}
+        <FeaturedSponsorsList data={data.platinumSponsors.edges} />
+
+        <div className="row">
+                <div className="col-lg-12">
+                    <div className="section-title text-center">
+                      <div className="title-text">
+                        <h2>Hosting Sponsors</h2>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+        <FeaturedSponsorsList data={data.hostingSponsors.edges} />
+
+        <div className="row">
+                <div className="col-lg-12">
+                    <div className="section-title text-center">
+                      <div className="title-text mb30">
+                        <h2>Featured Sponsors</h2>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="elfsight-app-3739f71f-f3ae-416a-a80d-3d0c4b5cd012" data-elfsight-app-lazy></div>
+
 
           <div className="row">
               <div className="col-lg-12">
                   <div className="section-title text-center">
-                      <div className="title-text mtb30 xs-mb40">
+                      <div className="title-text mtb50 xs-mb40">
                           <h2>Sponsor REFACTR.TECH 2024 Events</h2>
                       <p style={{marginTop: "15px", fontSize: "1.3em"}}>Companies, are you looking for an opportunity to engage with our community of thousands of local and regional technologists? Check out our sponsorship prospectus to review the many ways to partner with REFACTR.TECH.</p>
                       </div>
@@ -664,7 +690,7 @@ export default ({ data }) => (
           <div className="row pad-bot30">
                 <div className="col-lg-12">
                     <div className="primary-btn text-center">
-                        <a href="https://refactrtech.typeform.com/to/ouMvCw" class="btn-primary" rel="noreferrer noopener" target="_blank">Become a Sponsor</a>
+                        <a href="https://airtable.com/appjEFNuK5jwLsL1K/pagnYbn239nxX47BQ/form" class="btn-primary" rel="noreferrer noopener" target="_blank">Become a Sponsor</a>
                     </div>
                 </div>
             </div>
@@ -950,8 +976,8 @@ export const speakerPageQuery = graphql`
       }
     }
 
-    featuredSponsors: allAirtable(
-      filter: { table: { eq: "PastSponsors" }, data: { featurePastSponsor: { eq: true } } }
+    platinumSponsors: allAirtable(
+      filter: { table: { eq: "Sponsors" }, data: { tier: { eq: "Platinum" } } }
       sort: { fields: data___list_order }
     ) {
       edges {
@@ -960,12 +986,33 @@ export const speakerPageQuery = graphql`
             slug
           }
           data {
-            pastSponsor_name
-            pastSponsor_logo {
+            sponsor_name
+            sponsor_logo {
               filename
               url
             }
-            pastSponsor_url
+            sponsor_url
+          }
+        }
+      }
+    }
+
+    hostingSponsors: allAirtable(
+      filter: { table: { eq: "Sponsors" }, data: { tier: { eq: "Annual Host" } } }
+      sort: { fields: data___list_order }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          data {
+            sponsor_name
+            sponsor_logo {
+              filename
+              url
+            }
+            sponsor_url
           }
         }
       }

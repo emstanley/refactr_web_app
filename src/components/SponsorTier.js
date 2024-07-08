@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "gatsby-image";
+//import Img from "gatsby-image";
 
 export const SponsorTier = ({data}) => {
     return (
@@ -10,9 +10,9 @@ export const SponsorTier = ({data}) => {
                 {data.sponsors.map((sponsor) => (
                     <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3" key={sponsor.company_name}>
                         <a href={sponsor.url} rel="noreferrer noopener" target="_blank" title={`${sponsor.tier} Partner: ${sponsor.company_name}`}>
-                        {sponsor.logo.localFiles && (
-                            <Img
-                                fluid={sponsor.logo.localFiles[0].childImageSharp.fluid}
+                        {sponsor.logo[0].url && (
+                            <img
+                                src={sponsor.logo[0].url}
                                 style={{
                                     display: 'block',
                                     width: '100%',

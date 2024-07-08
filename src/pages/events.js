@@ -294,7 +294,7 @@ export default ({ data }) => (
 export const all_sessions = graphql`
   {
     allAirtable(
-      filter: { table: { eq: "Sessions" }, data: { year: { eq: 2024 } } }
+      filter: { table: { eq: "Sessions" }, data: { Upcoming: { eq: true } } }
       sort: { fields: [data___Track, data___start_time] }
       ) {
       edges {

@@ -254,8 +254,13 @@ export const sponsorPageQuery = graphql`
             sponsor_url
             tier
             sponsor_logo {
-              filename
-              url
+              localFiles {
+                childImageSharp {
+                  fluid(maxWidth: 512, maxHeight: 512) {
+                    ...GatsbyImageSharpFluid_tracedSVG
+                  }
+                }
+              }
             }
           }
         }

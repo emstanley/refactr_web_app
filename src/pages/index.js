@@ -481,12 +481,12 @@ export default ({ data }) => (
                 <div className="col-lg-3 col-sm-12">
                     <div className="primary-btn text-center mt30">
                       {/* You can customize this button any way you like */}
-                      <a href="https://www.eventbrite.com/e/hybrid-refactr-x-react-robins-new-navigation-api-oop-interview-tips-tickets-931967538997" className="btn-primary" target="_blank"><i class="fa fa-ticket"></i> &nbsp;Reserve Your Spot</a>
+                      <a href="https://www.meetup.com/refactr-tech/events/300421294/" className="btn-primary" target="_blank"><i class="fa fa-ticket"></i> &nbsp;Reserve Your Spot</a>
                     </div>
                 </div>
                 <div className="col-md-3 col-sm-12">
                         <div className="primary-btn text-center mt30">
-                        <a title="Add to Calendar" className="addeventatc btn-primary" data-id="Uh22301518" href="https://www.addevent.com/event/Uh22301518" target="_blank"><i class="fa fa-calendar-plus-o"></i>&nbsp;&nbsp;&nbsp;Add to Calendar</a>
+                        <a title="Add to Calendar" className="addeventatc btn-primary" data-id="zm22343886" href="https://www.addevent.com/event/zm22343886" target="_blank"><i class="fa fa-calendar-plus-o"></i>&nbsp;&nbsp;&nbsp;Add to Calendar</a>
                         </div>
                 </div>
                 <div className="col-md-3 col-sm-12">
@@ -988,8 +988,13 @@ export const speakerPageQuery = graphql`
           data {
             sponsor_name
             sponsor_logo {
-              filename
-              url
+              localFiles {
+                childImageSharp {
+                  fluid(maxWidth: 512, maxHeight: 512) {
+                    ...GatsbyImageSharpFluid_tracedSVG
+                  }
+                }
+              }
             }
             sponsor_url
           }
@@ -1009,8 +1014,13 @@ export const speakerPageQuery = graphql`
           data {
             sponsor_name
             sponsor_logo {
-              filename
-              url
+              localFiles {
+                childImageSharp {
+                  fluid(maxWidth: 512, maxHeight: 512) {
+                    ...GatsbyImageSharpFluid_tracedSVG
+                  }
+                }
+              }
             }
             sponsor_url
           }

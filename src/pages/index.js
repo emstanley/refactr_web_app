@@ -467,7 +467,7 @@ export default ({ data }) => (
               <div className="col-lg-12">
                   <div className="section-title text-center">
                       <div className="title-text mtb30 xs-mb40">
-                          <h2>Next Event</h2>
+                          <h2>Featured Event</h2>
 
 
                       </div>
@@ -504,6 +504,133 @@ export default ({ data }) => (
           </div>
         </div>
         {/*Event CTA Ends Here*/}
+
+
+
+        {/*Featured Careers Area Starts Here*/}
+        <div className="whos-speaking-area ptb50">
+          <div className="container">
+
+            <div className="row">
+              <div className="col-lg-12">
+                <div className="section-title text-center">
+                  <div className="title-text mb30">
+                    <h2>Featured Sponsor Career Opportunities</h2>
+                    <div class="elfsight-app-0592bbfe-5429-4270-b2c3-bc921365cc8c" data-elfsight-app-lazy></div>
+
+                    <a style={{textAlign: 'center', color: '#CF057C', fontWeight: 'normal'}} href="/jobs-at-fanduel">
+                    <h3>See More Career Opportunities &gt;&gt;</h3>
+                  </a>
+                  </div>
+                </div>
+              </div>
+
+
+              
+                
+              
+              {/* /container end*/}
+            </div>
+            {/*Featured Career Area Ends Here*/}
+            
+          </div>
+          
+        </div>
+
+
+
+        {/*Sponsors CTA Starts Here*/}
+        <div className="our-sponsors-area ptb50 bg-color">
+          <div className="container">
+
+          <div className="row">
+                <div className="col-lg-12">
+                    <div className="section-title text-center">
+                      <div className="title-text">
+                        <h2>Platinum Sponsor</h2>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+        <FeaturedSponsorsList data={data.platinumSponsors.edges} />
+
+        <div className="row">
+                <div className="col-lg-12">
+                    <div className="section-title text-center">
+                      <div className="title-text">
+                        <h2>Hosting Sponsors</h2>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+        <FeaturedSponsorsList data={data.hostingSponsors.edges} />
+
+        <div className="row">
+                <div className="col-lg-12">
+                    <div className="section-title text-center">
+                      <div className="title-text mb30">
+                        <h2>Featured Sponsors</h2>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="elfsight-app-3739f71f-f3ae-416a-a80d-3d0c4b5cd012" data-elfsight-app-lazy></div>
+
+
+          <div className="row">
+              <div className="col-lg-12">
+                  <div className="section-title text-center">
+                      <div className="title-text mtb50 xs-mb40">
+                          <h2>Sponsor REFACTR.TECH 2024 Events</h2>
+                      <p style={{marginTop: "15px", fontSize: "1.3em"}}>Companies, are you looking for an opportunity to engage with our community of thousands of local and regional technologists? Check out our sponsorship prospectus to review the many ways to partner with REFACTR.TECH.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div className="row pad-bot30">
+                <div className="col-lg-12">
+                    <div className="primary-btn text-center">
+                        <a href="https://airtable.com/appjEFNuK5jwLsL1K/pagnYbn239nxX47BQ/form" class="btn-primary" rel="noreferrer noopener" target="_blank">Become a Sponsor</a>
+                    </div>
+                </div>
+            </div>
+
+            {/*<hr />
+
+
+              <div className="row">
+                <div className="col-lg-12">
+                    <div className="section-title text-center">
+                      <div className="title-text mb30">
+                        <h2>Past Sponsors</h2>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+        <CurrentSponsorsList data={data.currentSponsors.edges} />*/}
+
+            {/*<div className="row">
+                <div className="col-lg-12">
+                  <a style={{textAlign: 'center', color: '#CF057C', fontWeight: 'normal'}} href="/sponsors">
+                    <h3>See 2022 Sponsors &gt;&gt;</h3>
+      </a>*/}
+                  {/*<p style={{textAlign: 'center'}}>More Speakers Coming Soon!</p>*/}
+                {/*</div>
+    </div>*/}
+
+        
+
+            
+      
+
+          </div>
+        </div>
+        {/*Sponsors CTA Ends Here*/}  
 
 
         
@@ -635,98 +762,7 @@ export default ({ data }) => (
 
 
 
-        {/*Sponsors CTA Starts Here*/}
-        <div className="our-sponsors-area ptb50 bg-color">
-          <div className="container">
-
-          <div className="row">
-                <div className="col-lg-12">
-                    <div className="section-title text-center">
-                      <div className="title-text">
-                        <h2>Platinum Sponsor</h2>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-
-        <FeaturedSponsorsList data={data.platinumSponsors.edges} />
-
-        <div className="row">
-                <div className="col-lg-12">
-                    <div className="section-title text-center">
-                      <div className="title-text">
-                        <h2>Hosting Sponsors</h2>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-
-        <FeaturedSponsorsList data={data.hostingSponsors.edges} />
-
-        <div className="row">
-                <div className="col-lg-12">
-                    <div className="section-title text-center">
-                      <div className="title-text mb30">
-                        <h2>Featured Sponsors</h2>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-
-              <div class="elfsight-app-3739f71f-f3ae-416a-a80d-3d0c4b5cd012" data-elfsight-app-lazy></div>
-
-
-          <div className="row">
-              <div className="col-lg-12">
-                  <div className="section-title text-center">
-                      <div className="title-text mtb50 xs-mb40">
-                          <h2>Sponsor REFACTR.TECH 2024 Events</h2>
-                      <p style={{marginTop: "15px", fontSize: "1.3em"}}>Companies, are you looking for an opportunity to engage with our community of thousands of local and regional technologists? Check out our sponsorship prospectus to review the many ways to partner with REFACTR.TECH.</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <div className="row pad-bot30">
-                <div className="col-lg-12">
-                    <div className="primary-btn text-center">
-                        <a href="https://airtable.com/appjEFNuK5jwLsL1K/pagnYbn239nxX47BQ/form" class="btn-primary" rel="noreferrer noopener" target="_blank">Become a Sponsor</a>
-                    </div>
-                </div>
-            </div>
-
-            {/*<hr />
-
-
-              <div className="row">
-                <div className="col-lg-12">
-                    <div className="section-title text-center">
-                      <div className="title-text mb30">
-                        <h2>Past Sponsors</h2>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-
-        <CurrentSponsorsList data={data.currentSponsors.edges} />*/}
-
-            {/*<div className="row">
-                <div className="col-lg-12">
-                  <a style={{textAlign: 'center', color: '#CF057C', fontWeight: 'normal'}} href="/sponsors">
-                    <h3>See 2022 Sponsors &gt;&gt;</h3>
-      </a>*/}
-                  {/*<p style={{textAlign: 'center'}}>More Speakers Coming Soon!</p>*/}
-                {/*</div>
-    </div>*/}
-
         
-
-            
-      
-
-          </div>
-        </div>
-        {/*Sponsors CTA Ends Here*/}
 
         {/*Registration CTA Starts Here*/}
         {/*<div className="our-sponsors-area ptb50">

@@ -481,12 +481,12 @@ export default ({ data }) => (
                 <div className="col-lg-3 col-sm-12">
                     <div className="primary-btn text-center mt30">
                       {/* You can customize this button any way you like */}
-                      <a href="https://www.meetup.com/refactr-tech/events/300421294/" className="btn-primary" target="_blank"><i class="fa fa-ticket"></i> &nbsp;Reserve Your Spot</a>
+                      <a href="https://reg.connectevents.io/ConnectEvents/refactrsept2024/" className="btn-primary" target="_blank"><i class="fa fa-ticket"></i> &nbsp;Reserve Your Spot</a>
                     </div>
                 </div>
                 <div className="col-md-3 col-sm-12">
                         <div className="primary-btn text-center mt30">
-                        <a title="Add to Calendar" className="addeventatc btn-primary" data-id="zm22343886" href="https://www.addevent.com/event/zm22343886" target="_blank"><i class="fa fa-calendar-plus-o"></i>&nbsp;&nbsp;&nbsp;Add to Calendar</a>
+                        <a title="Add to Calendar" className="addeventatc btn-primary" data-id="nF22881601" href="https://www.addevent.com/event/nF22881601" target="_blank"><i class="fa fa-calendar-plus-o"></i>&nbsp;&nbsp;&nbsp;Add to Calendar</a>
                         </div>
                 </div>
                 <div className="col-md-3 col-sm-12">
@@ -496,7 +496,7 @@ export default ({ data }) => (
                 </div> 
                 <div className="col-md-3 col-sm-12">
                   <div className="primary-btn text-center mt30">
-                  <a href="/events" className="btn-primary" target="_blank"><i class="fa fa-list-ul"></i> &nbsp;See All Events</a>
+                  <a href="/events" className="btn-primary" target="_blank"><i class="fa fa-list-ul"></i> &nbsp;See Upcoming Events</a>
                   </div>
                 </div>
             </div>

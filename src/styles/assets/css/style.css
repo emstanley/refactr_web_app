@@ -216,6 +216,27 @@ ul {
     width: 50px;
     background: #4125dd; }
 
+  .bg-hacktoberfest2024 .section-title .title-text h2 {
+      color: #F4F0E0;
+      font-size: 45px;
+      line-height: 45px;
+      font-weight: 600;
+      text-transform: capitalize;
+      position: relative;
+      display: inline-block; }
+      .bg-hacktoberfest2024 .section-title .title-text h2:before {
+        position: absolute;
+        left: -62px;
+        top: 24px;
+        content: "";
+        height: 3px;
+        width: 50px;
+        background: #FF8BFF; }
+
+
+.bg-hacktoberfest2024 h3 {
+  color: #F4F0E0;
+}
 
     h2.track-title-CareerLeadership:before{ 
       background: #FCB400 !important;
@@ -835,6 +856,15 @@ a {
   /* background-image: url(../img/bg/9.jpg);  */
   background:black;
 }
+
+.bg-hacktoberfest2024 {
+  background-image: url(../img/bg/hacktoberfest-bg.png);
+}
+
+.bg-ai-careers {
+  background-image: url(../img/bg/careers-in-ai.jpeg); 
+  background-position: right bottom;
+  background-size: cover; }
 
 .bg-blm {
     background-image: url(../img/bg/Black-Lives-Matter.jpg); 

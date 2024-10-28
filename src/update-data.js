@@ -1,6 +1,16 @@
 export default [
     {
-        id: 1,
+        id: 3,
+        imageSource: '/img/bg/careers-in-ai.jpeg',
+        date: 'May 23, 2024',
+        title: 'Recap: Preparing for a Career in AI',
+        description: 'A panel discussing Preparing for a Career in Artificial Intelligence (AI) with a cross-functional group of leaders in the AI space...',
+        details: 'careers-in-ai-panel',
+        soldOut: false,
+        page: "/careers-in-ai-panel"
+    },
+    {
+        id: 3,
         imageSource: '/img/bg/the90s.jpg',
         date: 'August 16, 2021',
         title: 'The Rad, Rebellious 90s',
@@ -10,7 +20,7 @@ export default [
         page: "/the-rad-rebellious-90s"
     },
     {
-        id: 2,
+        id: 4,
         imageSource: '/img/bg/Covid19.jpg',
         date: 'April 27, 2021',
         title: 'April 2021 Covid Update',
@@ -20,7 +30,7 @@ export default [
         page: "/covidupdateapril2021"
     },
     {
-        id: 3,
+        id: 5,
         imageSource: '/img/bg/stop-AAPI-hate.png',
         date: 'March 23, 2021',
         title: 'Stop Asian Hate',
@@ -30,7 +40,7 @@ export default [
         page: "/stopasianhate"
     },
     {
-        id: 4,
+        id: 6,
         imageSource: '/img/bg/Covid19.jpg',
         date: 'June 7, 2020',
         title: 'A REFACTR.TECH Update',
@@ -40,7 +50,7 @@ export default [
         page: "/CovidUpdate"
     },
     {
-        id: 5,
+        id: 7,
         imageSource: '/img/bg/Black-Lives-Matter.jpg',
         date: 'June 1, 2020',
         title: 'Black Lives Matter',

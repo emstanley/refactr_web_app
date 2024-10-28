@@ -131,9 +131,9 @@ export default ({ data }) => {
                   </div>
                 </div>
                 <p>
-                REFACTR.TECH provides a platform to highlight powerful and unique stories often untold in tech. 
-                We aim to foster collaboration and thoughtful discussions around technology. 
-                We offer a holistic view to learning technical skills, focusing on career development, 
+                REFACTR.TECH highlights unique, powerful stories often untold in tech. 
+                We foster collaboration and thoughtful discussions around technology-- 
+                offering a holistic view to learning technical skills, focusing on career development, 
                 mental health, community building, and leadership. This sets us apart from many technical 
                 conferences and meetups that don't usually offer such a comprehensive approach.
                 </p>

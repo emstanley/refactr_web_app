@@ -105,7 +105,9 @@ export default ({ data }) => (
       <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
 
       <script type="text/javascript" src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
-      <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script> 
+      <script src="https://static.elfsight.com/platform/platform.js" async></script>
 
     </Helmet>
     <div>
@@ -467,20 +469,21 @@ export default ({ data }) => (
               <div className="col-lg-12">
                   <div className="section-title text-center">
                       <div className="title-text mtb30 xs-mb40">
-                          <h2>Featured Event</h2>
-
-
+                          <h2>Featured Talks</h2>
                       </div>
                   </div>
-                  <SessionCardList items={data.featuredSessions.edges} showBuyTickets={false}  soldOut={false} showTrack={false}/>
+
+                  {/*<SessionCardList items={data.featuredSessions.edges} showBuyTickets={false}  soldOut={false} showTrack={false}/>*/}
+                  
+                  <h3>Celebrating Open Source</h3>
+                  <div class="elfsight-app-9479e05a-423d-4050-9616-529b5c01ded6" data-elfsight-app-lazy></div>
 
               </div>
           </div>
 
-          <div className="row pad-bot30">
+          {/*<div className="row pad-bot30">
                 <div className="col-lg-3 col-sm-12">
                     <div className="primary-btn text-center mt30">
-                      {/* You can customize this button any way you like */}
                       <a href="https://reg.connectevents.io/ConnectEvents/refactrsept2024/" className="btn-primary" target="_blank"><i class="fa fa-ticket"></i> &nbsp;Reserve Your Spot</a>
                     </div>
                 </div>
@@ -499,7 +502,7 @@ export default ({ data }) => (
                   <a href="/events" className="btn-primary" target="_blank"><i class="fa fa-list-ul"></i> &nbsp;See Upcoming Events</a>
                   </div>
                 </div>
-            </div>
+            </div>*/}
 
           </div>
         </div>
@@ -584,7 +587,7 @@ export default ({ data }) => (
               <div className="col-lg-12">
                   <div className="section-title text-center">
                       <div className="title-text mtb50 xs-mb40">
-                          <h2>Sponsor REFACTR.TECH 2024 Events</h2>
+                          <h2>Sponsor REFACTR.TECH 2025 Events</h2>
                       <p style={{marginTop: "15px", fontSize: "1.3em"}}>Companies, are you looking for an opportunity to engage with our community of thousands of local and regional technologists? Check out our sponsorship prospectus to review the many ways to partner with REFACTR.TECH.</p>
                       </div>
                   </div>
@@ -809,26 +812,25 @@ export default ({ data }) => (
                 <div className="single-counter xs-mb40">
                   <div className="count-content" style={{ textAlign: "center"}}>
                     <span className="count" style={{ fontSize: "3.1em"}}>Recap Past REFACTR Events</span>
-                    <p style={{ fontSize: "1.3em", fontWeight: "400"}}>Missed the last REFACTR.TECH? Or just want to relive the vibes from our previous conferences?</p>
-                      <div className="row justify-content-center">
+                    <p style={{ fontSize: "1.3em", fontWeight: "400"}}>Missed the last REFACTR.TECH event? Or just want to relive the vibes from our previous conferences?</p>
+                    
+                    <div className="row justify-content-center">
+                    
 
-                      <div className="col-md-3 col-sm-12">
+                      {/*<div className="col-md-3 col-sm-12">
                         <div className="primary-btn text-center mt30">
-                            {/* <a href="https://2019.refactr.tech" class="btn-primary" style={{border: "2px solid #fff"}}>2019 Conference</a> */}
                             <a href="https://www.youtube.com/@refactrtech/playlists" class="btn-primary" style={{border: "2px solid #fff"}}>2023 Videos</a> 
                         </div>
                       </div>
 
                       <div className="col-md-3 col-sm-12">
                         <div className="primary-btn text-center mt30">
-                            {/* <a href="https://2019.refactr.tech" class="btn-primary" style={{border: "2px solid #fff"}}>2019 Conference</a> */}
                             <a href="https://www.youtube.com/playlist?list=PLtsNj-uCrJ4bbjFYU2RocECQv_JyQIaxK" class="btn-primary" style={{border: "2px solid #fff"}}>2022 Videos</a> 
                         </div>
                       </div>
                       
                         <div className="col-md-3 col-sm-12">
                           <div className="primary-btn text-center mt30">
-                              {/* <a href="https://2019.refactr.tech" class="btn-primary" style={{border: "2px solid #fff"}}>2019 Conference</a> */}
                               <a href="https://www.youtube.com/playlist?list=PLtsNj-uCrJ4a2S2DAIsLRCj1dus_TGnIn" class="btn-primary" style={{border: "2px solid #fff"}}>2021 Videos</a> 
                           </div>
                         </div>
@@ -837,9 +839,12 @@ export default ({ data }) => (
                           <div className="primary-btn text-center mt30">
                               <a href="https://www.youtube.com/channel/UCfBdXCYPCHEXX8ISwOQM08A" class="btn-primary" style={{border: "2px solid #fff"}}>2019 Videos</a>
                           </div>
-                        </div>   
+                        </div> */}
+                        
+                        
                       </div>
                   </div>
+                  <div class="elfsight-app-b6bd374b-3147-4edc-b2b5-3f1a19b61b4a" data-elfsight-app-lazy></div>
                 </div>
               </div>
             </div>

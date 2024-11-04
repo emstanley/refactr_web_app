@@ -6,10 +6,10 @@ import { Helmet } from "react-helmet";
 export default ({ data }) => (
   <div>
   <Helmet>
-    <title>Explore | REFACTR.TECH 2024</title>
+    <title>Explore Open Source | REFACTR.TECH 2024</title>
     <meta
       name="description"
-      content="REFACTR.TECH is all about growing and showcasing powerful voices of marginalized people and allies in tech."
+      content="Join the REFACTR.TECH community as we celebrate and explore open source technologies."
     />
 
     {/* <!-- Open Graph data --> */}
@@ -19,24 +19,24 @@ export default ({ data }) => (
     <meta property="og:url" content="https://www.refactr.tech/" />
     <meta
       property="og:title"
-      content="Explore | REFACTR.TECH 2024"
+      content="Explore Open Source | REFACTR.TECH 2024"
     />
     <meta
       property="og:description"
-      content="REFACTR.TECH is all about growing and showcasing powerful voices of marginalized people and allies in tech."
+      content="Join the REFACTR.TECH community as we celebrate and explore open source technologies."
     />
     <meta 
         name="keywords" 
-        content="Atlanta, technology, events, diversity, inclusion, accessibility, software, frontend, fullstack, web development, leadership, career, javascript, react, angular, serverless, machine learning, product, ux, ui, design, social impact" 
+        content="Atlanta, technology, events, diversity, inclusion, accessibility, software, open source, frontend, fullstack, web development, leadership, career, javascript, react, angular, serverless, machine learning, product, ux, ui, design, social impact" 
     />
 
     <meta
       property="og:image"
-      content="https://refactr.tech/img/conference/Home_5.svg"
+      content="https://refactr.tech/img/feature/opensource-refactr-header.png"
     />
     <meta
       property="og:image:secure_url"
-      content="https://refactr.tech/img/conference/Home_5.svg"
+      content="https://refactr.tech/img/feature/opensource-refactr-header.png"
     />
     <meta property="og:image:width" content="500" />
     <meta property="og:image:height" content="260" />
@@ -48,16 +48,16 @@ export default ({ data }) => (
     <meta name="twitter:site" content="@RefactrTech" />
     <meta
       name="twitter:title"
-      content="Explore | REFACTR.TECH 2024"
+      content="Explore Open Source | REFACTR.TECH 2024"
     />
     <meta
       name="twitter:description"
-      content="REFACTR.TECH is all about growing and showcasing powerful voices of marginalized people and allies in tech."
+      content="Join the REFACTR.TECH community as we celebrate and explore open source technologies.."
     />
     <meta name="twitter:domain" content="https://refactr.tech" />
     <meta
       name="twitter:image"
-      content="https://refactr.tech/img/conference/Home_5.svg"
+      content="https://refactr.tech/img/feature/opensource-refactr-header.png"
     />
     <meta name="twitter:label1" content="Date" />
     <meta name="twitter:data1" content="" />
@@ -65,10 +65,10 @@ export default ({ data }) => (
     <meta name="twitter:data2" content="Atlanta, GA" />
 
     {/* <!-- Schema.org markup for Google+ --> */}
-    <meta itemprop="name" content="Explore | REFACTR.TECH 2024" />
+    <meta itemprop="name" content="Explore Open Source | REFACTR.TECH 2024" />
     <meta
       itemprop="description"
-      content="REFACTR.TECH is all about growing and showcasing powerful voices of marginalized people and allies in tech."
+      content="Join the REFACTR.TECH community as we celebrate and explore open source technologies."
     />
     <meta itemprop="image" content="/img/conference/Home_5.svg" />
     <meta
@@ -98,7 +98,7 @@ export default ({ data }) => (
                     <a href="/">Home</a>
                   </li>
                   <li>|</li>
-                  <li>Hacktoberfest</li>
+                  <li>Open Source</li>
                 </ol>
               </div>
             </div>
@@ -132,6 +132,7 @@ export default ({ data }) => (
                   <h2 style={{fontSize: "2.2em"}}> From Digital Ocean</h2>
                 </div>
               </div>
+              
 
 
               <div class="elfsight-app-fafa937b-6506-476a-b631-33653fd5a9cc" data-elfsight-app-lazy></div>
@@ -151,6 +152,11 @@ export default ({ data }) => (
                     <h2 style={{fontSize: "2.2em"}}> Celebrate Hacktoberfest with REFACTR.TECH</h2>
                   </div>
                 </div>
+                <p style={{color: "#F4F0E0"}}>
+                  Join the REFACTR.TECH community as we celebrate Hacktoberfest and Open Source leaders with a month of local and virtual events
+                </p>
+
+
                 <h3 className="mt30">Speakers</h3>
                 <div class="elfsight-app-aea4541a-113f-4f91-90cd-f731541b693c" data-elfsight-app-lazy></div>
                 <h3>Getting Started with Open Source</h3>
@@ -172,6 +178,9 @@ export default ({ data }) => (
                   <h2 style={{fontSize: "2.2em"}}>All Things Open 2024 x REFACTR.TECH</h2>
                 </div>
               </div>
+              <p>
+              Learn from REFACTR.TECH speakers who are speaking at All Things Open 2024, the largest open source event on the east coast
+              </p>
 
               <div class="elfsight-app-fa5aeaca-191b-4e34-a2be-85e7eed47ee6" data-elfsight-app-lazy></div>
 
@@ -192,6 +201,9 @@ export default ({ data }) => (
                     <h2 style={{fontSize: "2.2em"}}>Open Source @ REFACTR.TECH</h2>
                   </div>
                 </div>
+                <p>
+                Explore open source technologies with our community of experts
+                </p>
 
 
                 <div class="elfsight-app-019541d9-5706-4b95-802b-a691978724ed" data-elfsight-app-lazy></div>
